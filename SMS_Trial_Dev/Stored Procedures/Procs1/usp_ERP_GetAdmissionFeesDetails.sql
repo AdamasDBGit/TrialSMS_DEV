@@ -72,7 +72,7 @@ Select t1.I_Fee_Component_InstallmentID,
                  ELSE
                      0
              END,
-             Seq
+             t1.Seq
     Select *
     from #Temp_Fee_Installment
     Select SUM(N_Installment_Amount)+SUM(N_IGST_Value) as Total_AMt,
