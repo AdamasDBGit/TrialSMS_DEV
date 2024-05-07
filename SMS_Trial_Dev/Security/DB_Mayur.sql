@@ -1,0 +1,2 @@
+﻿CREATE USER [DB_Mayur] FOR LOGIN [DB_Mayur];
+

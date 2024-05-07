@@ -1,0 +1,2 @@
+﻿CREATE USER [TridipAIS] FOR LOGIN [TridipAIS];
+

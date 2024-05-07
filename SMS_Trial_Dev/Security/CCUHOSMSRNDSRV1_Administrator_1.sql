@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [CCUHOSMSRNDSRV1\Administrator]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

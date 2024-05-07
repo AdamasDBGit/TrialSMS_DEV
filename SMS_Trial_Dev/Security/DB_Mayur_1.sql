@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [DB_Mayur]
+    WITH PASSWORD = N'bimtFqmxqgg{mf^Pm=0ygykvmsFT7_&#$!~<qkhc|pi{Fxmh', SID = 0x03BE2E82874CCC44B53D6E79B798C320, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

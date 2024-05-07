@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SPal]
+    WITH PASSWORD = N'bimtqjbmvxWqqeqggmfumygymsFT7_&#$!~<kdvqtkhWTyc|', SID = 0xA7DBF862077101459DF7A8E53032C8CA, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

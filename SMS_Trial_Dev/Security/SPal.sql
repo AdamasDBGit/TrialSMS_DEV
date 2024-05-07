@@ -1,0 +1,2 @@
+﻿CREATE USER [SPal] FOR LOGIN [SPal];
+

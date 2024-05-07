@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [tridipLMS]
+    WITH PASSWORD = N'bimtUqimxqggmfNmXZyLgykvmsFT7_&#$!~<qkhcs|p{xmh{', SID = 0x4555217E5F23384088F690720A9BFFB6, DEFAULT_LANGUAGE = [us_english], CHECK_EXPIRATION = ON;
+

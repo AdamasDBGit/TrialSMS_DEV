@@ -1,0 +1,77 @@
+07-05-2024 17:55:43	This log contains information about the import schema operation into project 'SMS_Trial_Dev' on computer 'DESKTOP-9RQA7JH' by user 'Abhik'.
+07-05-2024 17:55:44	Import of database schema has started.
+07-05-2024 17:55:57	Gathering database options
+07-05-2024 17:55:57	Gathering users
+07-05-2024 17:55:57	Gathering roles
+07-05-2024 17:55:57	Gathering application roles
+07-05-2024 17:55:57	Gathering role memberships
+07-05-2024 17:55:57	Gathering filegroups
+07-05-2024 17:55:57	Gathering full-text catalogs
+07-05-2024 17:55:57	Gathering assemblies
+07-05-2024 17:55:57	Gathering certificates
+07-05-2024 17:55:57	Gathering asymmetric keys
+07-05-2024 17:55:57	Gathering symmetric keys
+07-05-2024 17:55:57	Gathering encrypted symmetric keys
+07-05-2024 17:55:57	Gathering schemas
+07-05-2024 17:55:57	Gathering XML schema collections
+07-05-2024 17:55:57	Gathering user-defined data types
+07-05-2024 17:55:57	Gathering user-defined types
+07-05-2024 17:55:57	Gathering table types
+07-05-2024 17:55:58	Gathering unique keys for table types
+07-05-2024 17:55:58	Gathering primary keys for table types
+07-05-2024 17:55:58	Gathering indexes for table types
+07-05-2024 17:55:58	Gathering check constraints for table types
+07-05-2024 17:55:58	Gathering default constraints for table types
+07-05-2024 17:55:58	Gathering partition functions
+07-05-2024 17:55:58	Gathering partition schemes
+07-05-2024 17:55:58	Gathering functions
+07-05-2024 17:55:59	Gathering encrypted functions
+07-05-2024 17:55:59	Gathering aggregates
+07-05-2024 17:55:59	Gathering procedures
+07-05-2024 17:56:22	Gathering encrypted procedures
+07-05-2024 17:56:22	Gathering tables
+07-05-2024 17:56:25	Gathering primary keys
+07-05-2024 17:56:25	Gathering unique constraints
+07-05-2024 17:56:25	Gathering foreign keys
+07-05-2024 17:56:25	Gathering default constraints
+07-05-2024 17:56:26	Gathering check constraints
+07-05-2024 17:56:26	Gathering views
+07-05-2024 17:56:26	Gathering encrypted views
+07-05-2024 17:56:26	Gathering indexes
+07-05-2024 17:56:26	Gathering statistics
+07-05-2024 17:56:26	Gathering full-text index stoplists
+07-05-2024 17:56:26	Gathering search property lists
+07-05-2024 17:56:26	Gathering search properties
+07-05-2024 17:56:26	Gathering full-text indexes
+07-05-2024 17:56:26	Gathering column store indexes
+07-05-2024 17:56:26	Gathering spatial indexes
+07-05-2024 17:56:26	Gathering XML indexes
+07-05-2024 17:56:26	Gathering Selective XML indexes
+07-05-2024 17:56:26	Gathering encrypted triggers
+07-05-2024 17:56:26	Gathering triggers
+07-05-2024 17:56:26	Gathering encrypted and clr ddl triggers
+07-05-2024 17:56:26	Gathering ddl triggers
+07-05-2024 17:56:26	Gathering synonyms
+07-05-2024 17:56:26	Gathering defaults
+07-05-2024 17:56:26	Gathering data constraint uddt bindings
+07-05-2024 17:56:26	Gathering rules
+07-05-2024 17:56:26	Gathering data constraint uddt bindings
+07-05-2024 17:56:26	Gathering message types
+07-05-2024 17:56:26	Gathering queues
+07-05-2024 17:56:26	Gathering contracts
+07-05-2024 17:56:26	Gathering services
+07-05-2024 17:56:26	Gathering event notifications
+07-05-2024 17:56:26	Gathering remote service bindings
+07-05-2024 17:56:26	Gathering broker priorities
+07-05-2024 17:56:26	Gathering signatures
+07-05-2024 17:56:26	Gathering data compression options
+07-05-2024 17:56:26	Gathering sequence types
+07-05-2024 17:56:26	Gathering extended properties
+07-05-2024 17:56:28	Gathering credentials
+07-05-2024 17:56:28	Gathering logins
+07-05-2024 17:56:28	Gathering server audits
+07-05-2024 17:56:34	Scanning project for duplicate elements
+07-05-2024 17:56:35	Finished duplicate element processing
+07-05-2024 17:56:52	Finished importing database.
+07-05-2024 17:56:52	A summary of the import was saved to the following location: C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\Import Schema Logs\SMS_Trial_Dev_20240507122543.log
+07-05-2024 17:56:52	Click Finish to continue...

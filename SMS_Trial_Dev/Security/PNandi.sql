@@ -1,0 +1,2 @@
+﻿CREATE USER [PNandi] FOR LOGIN [PNandi];
+

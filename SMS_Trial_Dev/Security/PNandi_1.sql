@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [PNandi]
+    WITH PASSWORD = N'b1iymtq#pNimPxq}g%gmfm5ymsFT7_&#$!~<gyWl8kvqkhcs', SID = 0xD5A5B78FDB06C64F8CAF4FFF47AA9777, DEFAULT_DATABASE = [SMS], DEFAULT_LANGUAGE = [us_english];
+

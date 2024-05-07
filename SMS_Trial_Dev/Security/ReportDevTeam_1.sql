@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ReportDevTeam]
+    WITH PASSWORD = N'b2imtqmxq^giRlgmfmygykvimsFT7_&#$!~<qkhc|p{xmRhG', SID = 0xDF409589B0F5CF4596C2FAF1B15EB050, DEFAULT_LANGUAGE = [us_english], CHECK_EXPIRATION = ON;
+

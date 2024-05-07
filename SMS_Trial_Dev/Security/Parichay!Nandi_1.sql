@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Parichay!Nandi]
+    WITH PASSWORD = N'bimtqUHmRxeqIggmfmyvgyjkmsFT7_&#$!~<vqkhc|.p{xqm', SID = 0xE81C34DF6B7F394D89BF9C23DD885E0D, DEFAULT_DATABASE = [SMS], DEFAULT_LANGUAGE = [us_english], CHECK_EXPIRATION = ON;
+

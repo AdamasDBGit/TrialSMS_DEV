@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Report]
+    WITH PASSWORD = N'bi0+mtqmxhq2ggmffmvygaFymsFT7_&#$!~<kv@qkhcC|p{x' MUST_CHANGE, SID = 0xB5CFB48BA0E3A9478653F9BAE3778380, DEFAULT_LANGUAGE = [us_english], CHECK_EXPIRATION = ON;
+

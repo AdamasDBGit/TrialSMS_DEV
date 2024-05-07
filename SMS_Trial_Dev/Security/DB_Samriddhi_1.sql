@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [DB_Samriddhi]
+    WITH PASSWORD = N'b4imtzqmx7^;gY6qggmfmygymsFT7_&#$!~<3kvqekhc|p{x', SID = 0xEA4313D6C5F61E4FA68273B8FB65AD5F, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+
