@@ -1,4 +1,5 @@
-﻿CREATE Proc [dbo].[USP_ERP_MenuBinding_UserWise](
+﻿
+Create  Proc [dbo].[USP_ERP_MenuBinding_UserWise](
 @UserID int,
 @PermissionType Varchar(10)=Null
 )
@@ -94,7 +95,7 @@ I_Permission_ID
     INNER JOIN RecursiveCTE cte ON p.I_Parent_Menu_ID = cte.I_Permission_ID
 	--where cte.I_Parent_Menu_ID is not null
 )
-SELECT 
+SELECT DISTINCT
  a.I_Permission_ID as PermissionID
  ,b.Description as Parent_PermissionName
 ,a.Description as PermissionName
