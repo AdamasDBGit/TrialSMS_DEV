@@ -1393,7 +1393,6 @@
     <Build Include="Stored Procedures\Procs1\Routine_Test_TR.sql" />
     <Build Include="Stored Procedures\Procs1\Routine_Test_TR_Batch.sql" />
     <Build Include="Stored Procedures\Procs1\Routine_Test_TR_Branch.sql" />
-    <Build Include="Stored Procedures\Procs1\RoutineSlotGenerate.sql" />
     <Build Include="Stored Procedures\Procs1\SaveCenterVisitDetails.sql" />
     <Build Include="Stored Procedures\Procs1\SearchRoleWisePermission.sql" />
     <Build Include="Stored Procedures\Procs1\SettledChequeReport.sql" />
@@ -3894,6 +3893,7 @@
     <Build Include="Schema\SMManagement.sql" />
     <Build Include="Schema\STUDENTFEATURES.sql" />
     <Build Include="Schema\Role.sql" />
+    <Build Include="Stored Procedures\RoutineSlotGenerate.sql" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
