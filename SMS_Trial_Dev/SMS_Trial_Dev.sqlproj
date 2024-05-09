@@ -68,6 +68,7 @@
     <Folder Include="Database Triggers\" />
     <Folder Include="User Defined Types\" />
     <Folder Include="Schema" />
+    <Folder Include="Linked Server" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\T_Courier_Master.sql" />
@@ -3891,6 +3892,7 @@
     <Build Include="Schema\SMManagement.sql" />
     <Build Include="Schema\STUDENTFEATURES.sql" />
     <Build Include="Schema\Role.sql" />
+    <Build Include="Linked Server\PROD.sql" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
