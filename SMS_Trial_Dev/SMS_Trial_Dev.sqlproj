@@ -3901,7 +3901,7 @@
     </ArtifactReference>
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Data_Scripts\Session_Brand_D1.sql" />
-    <None Include="Data_Scripts\City_UserConfig_Class_Config_D2.sql" />
+    <PostDeploy Include="Data_Scripts\1_Session_Brand_D1.sql" />
+    <None Include="Data_Scripts\2_City_UserConfig_Class_Config_D2.sql" />
   </ItemGroup>
 </Project>
