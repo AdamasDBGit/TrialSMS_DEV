@@ -6125,6 +6125,95 @@ SET IDENTITY_INSERT [dbo].[T_Marital_Status] OFF
 GO
 
 
+SET IDENTITY_INSERT [dbo].[T_ERP_CRMSource_Details] ON 
+GO
+INSERT [dbo].[T_ERP_CRMSource_Details] ([I_Source_DetailsID], [I_EnqType_Source_Mapping_ID], [S_Name], [Is_Active]) VALUES (1, 7, N'Hindustan Times', 1)
+GO
+INSERT [dbo].[T_ERP_CRMSource_Details] ([I_Source_DetailsID], [I_EnqType_Source_Mapping_ID], [S_Name], [Is_Active]) VALUES (2, 15, N'Local', 1)
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_CRMSource_Details] OFF
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ON 
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (1, 8, 110, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (2, 8, 111, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (3, 8, 112, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (4, 8, 113, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (5, 8, 114, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (6, 8, 115, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (7, 9, 116, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (8, 9, 117, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (9, 9, 118, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (10, 9, 119, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (11, 9, 120, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (12, 9, 121, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (13, 9, 122, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (14, 9, 123, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (15, 9, 124, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (16, 9, 125, 1, CAST(N'2024-04-15' AS Date))
+GO
+INSERT [dbo].[T_ERP_EnqType_Source_Mapping] ([I_EnqType_Source_Mapping_ID], [I_Enquiry_Type_ID], [I_Info_Source_ID], [Is_Active], [Dt_Create_Dt]) VALUES (17, 9, 126, 1, CAST(N'2024-04-15' AS Date))
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_EnqType_Source_Mapping] OFF
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Followup_StatusM] ON 
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (1, N'Not Started', 0, NULL)
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (2, N'Ongoing', 0, NULL)
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (3, N'Follow-up Successful', 1, 5)
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (4, N'Follow-up Unsuccessful', 1, 6)
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (5, N'Initial Leads', 1, 1)
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (6, N'Passive Leads', 1, 2)
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (7, N'Promising Leads', 1, 3)
+GO
+INSERT [dbo].[T_ERP_Followup_StatusM] ([I_FollowupStatus_ID], [S_FollowupStatus_Desc], [Is_Active], [I_Seq]) VALUES (8, N'Interested Leads', 1, 4)
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Followup_StatusM] OFF
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_FollowupType_Master] ON 
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (1, N'Phone Call', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (2, N'Email', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (3, N'In-Person Meeting', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (4, N'Video Call', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (5, N'Text Message', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (6, N'Follow-up Meeting Scheduled', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (7, N'Interview Scheduled', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+INSERT [dbo].[T_ERP_FollowupType_Master] ([I_FollowupType_ID], [S_Followup_Name], [Dtt_Created_At], [Dtt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active]) VALUES (8, N'Others', CAST(N'1900-01-02T00:00:00.000' AS DateTime), NULL, 1, NULL, 1)
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_FollowupType_Master] OFF
+GO
+
+
+
 
 
 
