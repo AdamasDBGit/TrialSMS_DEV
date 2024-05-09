@@ -3976,5 +3976,35 @@
     <Build Include="User Defined Types\UT_User_Group.sql" />
     <Build Include="User Defined Types\UT_LogBookForInsertUpdate.sql" />
     <Build Include="User Defined Types\UT_LogBookTableForInsertUpdate.sql" />
+    <Build Include="Schema\ACADEMICS.sql" />
+    <Build Include="Schema\ASSESSMENT.sql" />
+    <Build Include="Schema\AUDIT.sql" />
+    <Build Include="Schema\CORPORATE.sql" />
+    <Build Include="Schema\CUSTOMERCARE.sql" />
+    <Build Include="Schema\DOCUMENT.sql" />
+    <Build Include="Schema\ECOMMERCE.sql" />
+    <Build Include="Schema\EOS.sql" />
+    <Build Include="Schema\EXAMINATION.sql" />
+    <Build Include="Schema\MBP.sql" />
+    <Build Include="Schema\PLACEMENT.sql" />
+    <Build Include="Schema\PSCERTIFICATE.sql" />
+    <Build Include="Schema\REPORT.sql" />
+    <Build Include="Schema\Academic.sql" />
+    <Build Include="Schema\ERP.sql" />
+    <Build Include="Schema\guardian.sql" />
+    <Build Include="Schema\LMS.sql" />
+    <Build Include="Schema\LOGISTICS.sql" />
+    <Build Include="Schema\NETWORK.sql" />
+    <Build Include="Schema\SelfService.sql" />
+    <Build Include="Schema\SMManagement.sql" />
+    <Build Include="Schema\STUDENTFEATURES.sql" />
+    <Build Include="Schema\Role.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
