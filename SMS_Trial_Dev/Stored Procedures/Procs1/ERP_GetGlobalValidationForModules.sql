@@ -1,11 +1,12 @@
 ﻿
+
 -- =============================================
 -- Author:		<Arijit Manna>
 -- Create date: <2024-04-10>
 -- Description:	<Get API Validation>
 -- exec ERP_GetAPIValidation 'WBAzqAgsKwUNoT5dbJJu','APIValidation'
 -- =============================================
-CREATE PROCEDURE [dbo].[ERP_GetGlobalValidationForModules]
+Create PROCEDURE [dbo].[ERP_GetGlobalValidationForModules]
 	(
 	@BrandID INT=NULL,
 	@Type nvarchar(50)=NULL,
