@@ -1922,7 +1922,6 @@
     <Build Include="Stored Procedures\Procs1\uspFetchTemporaryCHDetails.sql" />
     <Build Include="Stored Procedures\Procs1\uspFinanceModification.sql" />
     <Build Include="Stored Procedures\Procs1\uspFindInvoiceParent.sql" />
-    <Build Include="Stored Procedures\Procs1\uspFlowSMSAdmDatatoEMS.sql" />
     <Build Include="Stored Procedures\Procs1\uspFormSaleDetail.sql" />
     <Build Include="Stored Procedures\Procs1\uspFormSaleReportAIS.sql" />
     <Build Include="Stored Procedures\Procs1\uspFTBatchGetAccrualIncomeForCenter.sql" />
@@ -2412,7 +2411,6 @@
     <Build Include="Stored Procedures\Procs2\uspGetEmployeeUserDocument.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetEmployerDetail.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetEmployerList.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetEMSExamResult.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetEncryptedQuestionPaper.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetEnquiry.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetEnquiryAnalysisReport.sql" />
@@ -2457,7 +2455,6 @@
     <Build Include="Stored Procedures\Procs2\uspGetEvents.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetEventsCatagory.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExam.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetExamAttendanceReport.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamCenterList.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamComponent.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamComponentOnPreAssessmentTest.sql" />
@@ -2475,7 +2472,6 @@
     <Build Include="Stored Procedures\Procs2\uspGetExamListForEmployee.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamListForSkill.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamMaster.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetExamReportBatchwise.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamStudentList.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamTotalTime.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetExamTypeMaster.sql" />
