@@ -2076,7 +2076,6 @@
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceForInvoice.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendancePercentage.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceReport.sql" />
-    <Build Include="Stored Procedures\Procs1\uspGetAttendanceTransactionDataSolus.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAWSStudentMarksForAPI.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBasicPlansForRecommendedExtendedPlans.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBatchANDBranchTransferReport.sql" />
