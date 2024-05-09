@@ -69,6 +69,7 @@
     <Folder Include="User Defined Types\" />
     <Folder Include="Schema" />
     <Folder Include="Linked Server" />
+    <Folder Include="Data_Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\T_Courier_Master.sql" />
@@ -3898,5 +3899,8 @@
       <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
       <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
     </ArtifactReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Data_Scripts\Session_Brand.sql" />
   </ItemGroup>
 </Project>
