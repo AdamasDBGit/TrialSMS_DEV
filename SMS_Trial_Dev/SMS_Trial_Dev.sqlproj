@@ -3893,6 +3893,7 @@
     <Build Include="Schema\STUDENTFEATURES.sql" />
     <Build Include="Schema\Role.sql" />
     <Build Include="Linked Server\PROD.sql" />
+    <Build Include="Stored Procedures\Procedure1.sql" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">

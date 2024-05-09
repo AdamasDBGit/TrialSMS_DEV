@@ -6,3 +6,7 @@ C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\bin\Debug\SMS_Trial_Dev.d
 C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\bin\Debug\SMS_Trial_Dev.pdb
 C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\bin\Debug\master.dacpac
 C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\SMS_Trial_Dev.sqlproj.CopyComplete
+C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\Model.xml
+C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\refactor.xml
+C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\postdeploy.sql
+C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\predeploy.sql
