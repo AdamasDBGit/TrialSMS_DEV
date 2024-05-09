@@ -5307,4 +5307,824 @@ GO
 
 
 
+SET IDENTITY_INSERT [dbo].[T_ERP_Filter_Dateformat] ON 
+GO
+INSERT [dbo].[T_ERP_Filter_Dateformat] ([ID], [DateFilter_Type], [I_Value], [S_Purpose], [Is_Active]) VALUES (1, N'Today', 0, N'Followup', 1)
+GO
+INSERT [dbo].[T_ERP_Filter_Dateformat] ([ID], [DateFilter_Type], [I_Value], [S_Purpose], [Is_Active]) VALUES (2, N'Next 7 Days', 7, N'Followup', 1)
+GO
+INSERT [dbo].[T_ERP_Filter_Dateformat] ([ID], [DateFilter_Type], [I_Value], [S_Purpose], [Is_Active]) VALUES (3, N'Next 15 Days', 15, N'Followup', 1)
+GO
+INSERT [dbo].[T_ERP_Filter_Dateformat] ([ID], [DateFilter_Type], [I_Value], [S_Purpose], [Is_Active]) VALUES (4, N'ALL', NULL, N'Followup', 1)
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Filter_Dateformat] OFF
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Subject_Component] ON 
+GO
+INSERT [dbo].[T_ERP_Subject_Component] ([I_Subject_Component_ID], [S_Subject_Component_Name], [Dt_Created_At], [Dt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active], [I_Brand_ID]) VALUES (1, N'Theory', CAST(N'2023-12-28T15:50:45.757' AS DateTime), NULL, 1, NULL, 1, 107)
+GO
+INSERT [dbo].[T_ERP_Subject_Component] ([I_Subject_Component_ID], [S_Subject_Component_Name], [Dt_Created_At], [Dt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active], [I_Brand_ID]) VALUES (2, N'Practical', CAST(N'2023-12-28T15:51:19.893' AS DateTime), NULL, 1, NULL, 1, 107)
+GO
+INSERT [dbo].[T_ERP_Subject_Component] ([I_Subject_Component_ID], [S_Subject_Component_Name], [Dt_Created_At], [Dt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active], [I_Brand_ID]) VALUES (3, N'Viva', CAST(N'2023-12-28T15:51:31.000' AS DateTime), NULL, 1, NULL, 1, 107)
+GO
+INSERT [dbo].[T_ERP_Subject_Component] ([I_Subject_Component_ID], [S_Subject_Component_Name], [Dt_Created_At], [Dt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active], [I_Brand_ID]) VALUES (4, N'Oral', CAST(N'2023-12-29T16:22:55.167' AS DateTime), NULL, 1, NULL, 1, 107)
+GO
+INSERT [dbo].[T_ERP_Subject_Component] ([I_Subject_Component_ID], [S_Subject_Component_Name], [Dt_Created_At], [Dt_Modified_At], [I_Created_By], [I_Modified_By], [Is_Active], [I_Brand_ID]) VALUES (7, N'Drawing', CAST(N'2024-01-02T16:04:01.310' AS DateTime), NULL, 1, NULL, 1, 107)
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Subject_Component] OFF
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Subject_Component_Mapping] ON 
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (1, 1, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (2, 1, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (3, 1, 3, 0)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (4, 2, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (5, 2, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (6, 2, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (12, 28, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (13, 28, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (14, 28, NULL, 0)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (15, 28, 4, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (16, 29, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (17, 30, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (29, 32, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (30, 32, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (31, 33, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (32, 33, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (33, 33, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (34, 25, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (35, 17, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (36, 34, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (37, 35, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (40, 37, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (41, 38, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (44, 41, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (45, 41, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (46, 41, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (47, 18, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (48, 42, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (49, 42, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (50, 43, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (51, 43, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (52, 44, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (53, 45, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (54, 46, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (55, 47, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (56, 47, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (57, 48, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (58, 49, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (68, 54, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (69, 55, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (70, 55, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (71, 55, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (72, 1, 7, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (7, 2, 4, 0)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (18, 3, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (19, 3, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (20, 4, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (21, 4, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (22, 8, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (23, 8, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (24, 9, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (25, 9, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (26, 31, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (27, 31, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (28, 31, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (38, 36, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (39, 36, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (43, 40, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (59, 50, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (60, 50, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (61, 50, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (62, 51, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (63, 51, 3, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (42, 39, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (64, 52, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (65, 53, 1, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (66, 53, 2, 1)
+GO
+INSERT [dbo].[T_ERP_Subject_Component_Mapping] ([I_Subject_Component_Mapping], [I_Subject_ID], [I_Subject_Component_ID], [Is_Active]) VALUES (67, 53, 3, 1)
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Subject_Component_Mapping] OFF
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Subject_Structure] ON 
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (9, 5, 1, NULL, N'BOOLEAN ALGEBRA', 1, CAST(N'2023-10-09T12:09:25.637' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (10, 5, 2, 9, N'COCEPT OF TO Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 1, CAST(N'2023-10-09T12:27:39.273' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (11, 5, 3, 10, N'Topic COCEPT OF TO Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 1, CAST(N'2023-10-09T12:29:30.387' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (12, 5, 4, 11, N'Lession COCEPT OF TO Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 1, CAST(N'2023-10-09T12:30:17.583' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (13, 5, 1, NULL, N'next BOOLEAN ALGEBRA ', 1, CAST(N'2023-10-09T12:55:51.687' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (14, 5, 2, 9, N'2nd Record : COCEPT OF TO Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 1, CAST(N'2023-10-09T13:00:02.870' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (15, 5, 4, 16, N'2nd : Lession COCEPT OF TO Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 1, CAST(N'2023-10-09T13:00:37.537' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (16, 5, 3, 14, N'2nd : Topic COCEPT OF TO Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 1, CAST(N'2023-10-09T13:01:06.363' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1075, 6, 9, NULL, N'Draw', 1, CAST(N'2023-10-31T11:58:45.840' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1080, 6, 12, 1076, N'Human Anatomy', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, N'Practical,Theory,Animation', N'drawing of different Facial Expression')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1082, 6, 9, NULL, N'Oil Painting', 1, CAST(N'2023-10-08T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1083, 6, 11, 1082, N'Oil Pastel', 1, CAST(N'2023-10-12T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1084, 6, 12, 1083, N'Oil Pastel Drawing', 1, CAST(N'2023-10-12T00:00:00.000' AS DateTime), 1, N'Practical,Theory,Animation', N'drawing using oil pastels ')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1085, 6, 9, 0, N'Sculpture', 1, CAST(N'2023-11-02T01:31:49.937' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1090, 6, 11, 1089, N'Wall Paint', 1, CAST(N'2023-11-03T16:58:22.620' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1091, 6, 12, 1090, N'Wall Drawing', 1, CAST(N'2023-11-03T16:58:50.747' AS DateTime), 1, N'Testing', N'Wall art ')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1092, 7, 9, 0, N'Poems', 1, CAST(N'2023-11-09T14:17:12.417' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1093, 7, 9, 0, N'Prose', 1, CAST(N'2023-11-09T14:17:31.260' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1094, 7, 9, 0, N'Story', 1, CAST(N'2023-11-09T14:17:45.510' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1095, 7, 11, 1092, N'Indian Writer', 1, CAST(N'2023-11-09T14:18:07.947' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1096, 7, 11, 1092, N'Foreign Writers', 1, CAST(N'2023-11-09T14:18:20.587' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1097, 7, 12, 1095, N'Where the Mind is Without Fear by Rabindranath Tagore', 1, CAST(N'2023-11-09T14:19:43.040' AS DateTime), 1, N'inspirational poem', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1098, 7, 12, 1095, N'The Bazars of Hydrabad by Sarojini Naidu', 1, CAST(N'2023-11-09T14:20:34.023' AS DateTime), 1, N'Describing indian society and customs', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1099, 7, 12, 1096, N'Stopping by the Woods by Robert Frost', 1, CAST(N'2023-11-09T14:21:17.647' AS DateTime), 1, N'Nature and Human Life', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1100, 7, 12, 1096, N'The Cold Within by James Patrick Kinney ', 1, CAST(N'2023-11-09T14:22:13.163' AS DateTime), 1, N'Life, Struggle ', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1101, 7, 11, 1093, N'Short Stories', 1, CAST(N'2023-11-09T14:23:42.210' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1102, 7, 12, 1101, N'The Little Match Girl', 1, CAST(N'2023-11-09T14:24:32.957' AS DateTime), 1, N'Struggle, Hardships', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1103, 7, 12, 1101, N'All Summer in a Day', 1, CAST(N'2023-11-09T14:25:10.190' AS DateTime), 1, N'Light-hearted', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1104, 7, 11, 1094, N'Drama', 1, CAST(N'2023-11-09T14:25:23.017' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1105, 7, 12, 1104, N'Merchant of Venice by William Shakespeare', 1, CAST(N'2023-11-09T14:26:45.970' AS DateTime), 1, N'Venice in Shakespeare era through his writing', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1106, 7, 12, 1104, N'The Tempest by William Shakespeare', 1, CAST(N'2023-11-09T14:27:33.750' AS DateTime), 1, N'Magical, Revenge, Family', N'QnA, Detail Analysis')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1107, 14, 48, 0, N'Chemical bonding', 1, CAST(N'2023-11-16T17:11:25.123' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1108, 14, 48, 0, N'Acids and Bases', 1, CAST(N'2023-11-16T17:11:30.047' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1109, 14, 49, 1107, N'It includes the study of individual elements, chemical compounds, the transformation of these elements and compounds, as well as energy input and output during ', 1, CAST(N'2023-11-16T17:15:46.120' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1110, 14, 50, 1109, N'Molecular Structure', 1, CAST(N'2023-11-16T17:16:05.213' AS DateTime), 1, N'xcvxvxc', N'xvxcvxcv')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1113, 12, 73, 0, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:46:14.920' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1114, 12, 74, 1113, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:47:00.607' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1116, 11, 73, 0, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:50:23.777' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (18, 1, 1, NULL, N'Maths', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (19, 1, 2, 18, N'Calculus', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (20, 1, 2, 18, N'Commercial Mathematics', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (22, 1, 3, 19, N'Integration', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (23, 1, 3, 20, N'GST ', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (24, 1, 4, 22, N'Integrating solutionss', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, N'jdbahdabdkawjdnaiubdhawbdubawhbdh bd
+
+ajwdnjhabdwabdb', NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (26, 1, 4, 23, N'CGST and SGST', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1088, 6, 11, 1085, N'Sculpture Artifact', 1, CAST(N'2023-11-02T13:42:16.720' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1111, 15, 9, 0, N'Economics', 1, CAST(N'2023-11-17T12:05:06.507' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1112, 15, 11, 1111, N'Term - I', 1, CAST(N'2023-11-17T12:05:35.973' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1115, 12, 75, 1114, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:47:46.920' AS DateTime), 1, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1117, 11, 74, 1116, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:50:55.010' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1118, 11, 75, 1117, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:51:29.337' AS DateTime), 1, N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', N'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1120, 9, 74, 1119, N'DISSERTATION: Sub topic: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:55:36.757' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1121, 9, 75, 1120, N'DISSERTATION: Sub Sub topic :Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:56:10.207' AS DateTime), 1, N'DISSERTATION: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', N'DISSERTATION: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1122, 3, 5, 0, N'Toddler : Subject', 1, CAST(N'2023-12-01T15:59:48.240' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1123, 3, 6, 1122, N'Todler:Chapter', 1, CAST(N'2023-12-01T16:00:20.660' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1124, 3, 7, 1123, N'Todler: Module', 1, CAST(N'2023-12-01T16:00:39.317' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1125, 3, 8, 1124, N'Todler:Topic 1', 1, CAST(N'2023-12-01T16:01:11.647' AS DateTime), 1, N'test1', N'test1')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1126, 3, 6, 1122, N'Tolder:chapter2:', 1, CAST(N'2023-12-01T16:02:27.050' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1127, 3, 7, 1126, N'Todler: moduler2', 1, CAST(N'2023-12-01T16:02:48.177' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1128, 3, 8, 1127, N'Todler : Topic2 : Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.', 1, CAST(N'2023-12-01T16:03:57.877' AS DateTime), 1, N'Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.', N'Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1129, 3, 6, 1122, N'chapter 3:todler', 1, CAST(N'2023-12-01T16:04:39.970' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1130, 3, 7, 1129, N'modular3 : todler', 1, CAST(N'2023-12-01T16:04:55.563' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1132, 18, 9, 0, N'Mechanics', 1, CAST(N'2023-12-01T16:06:59.250' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1133, 18, 11, 1132, N'Motion and Forces', 1, CAST(N'2023-12-01T16:07:22.513' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1135, 18, 9, 0, N'Thermodynamics', 1, CAST(N'2023-12-01T16:09:05.577' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1136, 18, 11, 1135, N'Heat and Temperature', 1, CAST(N'2023-12-01T16:09:23.747' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1139, 13, 79, 0, N'Java Program', 1, CAST(N'2023-12-11T11:07:48.873' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1140, 13, 80, 1139, N'Concept of Binary Search', 1, CAST(N'2023-12-11T11:08:14.280' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1141, 13, 81, 1140, N'Java Application Based Questions on Arrays', 1, CAST(N'2023-12-11T11:12:54.653' AS DateTime), 1, N' Practical Classes', N'Java Programs with various inputs')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1150, 10, 9, 0, N'Test', 1, CAST(N'2023-12-14T10:58:57.820' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1151, 10, 11, 1150, N'Q1', 1, CAST(N'2023-12-14T10:59:52.397' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1152, 10, 11, 1150, N'Q3', 1, CAST(N'2023-12-14T11:01:16.147' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1153, 19, 40, 0, N'Q', 1, CAST(N'2023-12-14T11:03:51.393' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1154, 19, 40, 0, N'Test', 1, CAST(N'2023-12-14T11:05:25.283' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1155, 20, 85, 0, N'Math1', 1, CAST(N'2023-12-14T11:12:05.567' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1156, 20, 85, 0, N'Math2 ', 1, CAST(N'2023-12-14T11:12:24.110' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1157, 21, 94, 0, N'Subject 1 logs', 1, CAST(N'2023-12-15T17:13:52.797' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1158, 21, 95, 1157, N'Subject 2', 1, CAST(N'2023-12-15T17:15:45.890' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1089, 6, 9, 0, N'Wall art', 1, CAST(N'2023-11-03T16:58:09.497' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1131, 3, 8, 1130, N'Topic3 : Todler: Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.', 1, CAST(N'2023-12-01T16:05:55.970' AS DateTime), 1, N'objective', N'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1134, 18, 12, 1133, N' 1: Introduction to Motion  2: Momentum and Collisions', 1, CAST(N'2023-12-01T16:08:34.293' AS DateTime), 1, N'1: Motion Experiments 2: Determine the relationship between time and velocity.', N' 1: Measure and analyze the displacement of objects in various scenarios.  2: Determine the relationship between time and velocity. 3. Investigate the effects of different forces on objects. 4. Apply Newton''s laws to explain observed motions.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1142, 18, 11, 1135, N' Scientific Inquiry', 1, CAST(N'2023-12-13T12:49:34.470' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1143, 18, 9, 0, N'Matter and Its Properties', 1, CAST(N'2023-12-13T12:57:26.900' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1159, 21, 96, 1158, N'Subject 3', 1, CAST(N'2023-12-15T17:16:24.170' AS DateTime), 1, N'Testing logbooks', N'Testing logbooks')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1160, 21, 94, 0, N'Sub log 2', 1, CAST(N'2023-12-15T17:37:26.210' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1172, 10, 12, 1152, N'Types of atom', 1, CAST(N'2023-12-19T12:08:28.367' AS DateTime), 1, N'MethodologyMan has been exposed to changing surroundings ever since he came into existence. He has been quite interested in learning about his surroundings and studying and explaining the things that are happening around him. He has conducted experiments and observations to gather information as a result of his interest. Through the decades, it has also been in charge of many people’s research endeavours around the globe. Systematizing and organising the knowledge acquired in this way was absolutely necessary for the good of humanity.', N'Many acids and bases occur naturally in nature, such as citric acid in fruits like orange, lemon, etc, tartaric acid in tamarind, malic acid in apples, and lactic acid in milk and milk products, hydrochloric acid in gastric juices.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1173, 15, 122, 1112, N'Microeconomics', 1, CAST(N'2023-12-19T16:23:24.133' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1174, 15, 123, 1173, N'Economic Policy Analysis', 1, CAST(N'2023-12-19T16:24:08.243' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1175, 15, 124, 1174, N'Economics of Education', 1, CAST(N'2023-12-19T16:25:23.133' AS DateTime), 1, N'Students coming into the module should be able to solve basic consumer maximization problems (e.g., maximize utility subject to a budget constraint), understand supply and demand, and solve for market equilibria in simple economies. They should also have an understanding of basic concepts in public economics such as externalities, public goods, taxation. Finally, they should have a working knowledge of essential tools in applied econometrics (e.g., regression, least squares, instrumental variables, difference in differences, regression discontinuity).', N'To develop an understanding of the application of economics to the analysis of education policy, and to provide empirical evidence on the returns to different types of investments in human capital, and discuss the implications of this evidence for policy.  In this module we will analyze education policy through the lens of economics. There will be discussions of rigorous economic arguments for or against different  will also examine the best empirical evidence on these arguments.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1176, 23, 130, 0, N'Algebra', 1, CAST(N'2023-12-22T13:27:38.630' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1177, 23, 131, 1176, N'Elementary Algebra', 1, CAST(N'2023-12-22T13:28:31.460' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1178, 23, 131, 1176, N' Arithmetic includes numbers along with mathematical operations.As it is known that,  algebra is the concept based on unknown values called variables. The important concept of algebra is equations. It follows various rules to perform arithmetic operations. The rules are used to make sense of sets of data that involve two or more variables. It is used to analyse many things around us. You will probably use the concept of algebra without realising it. Algebra is divided into different sub-branches such as elementary algebra, advanced algebra, abstract algebra, linear algebra, and commutative algebra. ', 1, CAST(N'2023-12-22T13:29:29.193' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1179, 23, 132, 1178, N'The goal of elementary Algebra is to find a solution by resolving Algebraic expressionsSimple variables like x and y are expressed as equations in elementary', 1, CAST(N'2023-12-22T13:30:06.863' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1086, 6, 11, 1085, N'Sculpture Creation', 1, CAST(N'2023-11-02T10:32:04.977' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1087, 6, 12, 1086, N'Human Sculpture', 1, CAST(N'2023-11-02T10:34:19.570' AS DateTime), 1, N'Sculpture of Human ', N'Practical,Theory,Animation')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1180, 23, 133, 1179, N'Algebra Quiz  ', 1, CAST(N'2023-12-22T13:31:04.427' AS DateTime), 1, N'The phrase abstract algebra was coined at the turn of the 20th century to distinguish this area from what was normally referred to as algebra, the study of theAlgebra helps solve the mathematical equations and allows to derive unknown quantities, like the bank interest, proportions, percentages. We can use the variables in the algebra to represent the unknown quantities that are coupled in such a way as to rewrite the equations.  The algebraic formulas are used in our daily lives to find the distance and volume of containers and figure out the sales prices as and when needed. Algebra is constructive in stating a mathematical equation and relationship by using letters or other symbols representing the entities. The unknown quantities in the equation can be solved through algebra.  Some of the main topics coming under algebra include Basics of algebra, exponents, simplification of algebraic expressions, polynomials, quadratic equations, etc.', N'In elementary algebra, equations are framed from simple variables like x, y, etc. This states that in this branch algebraic expressions are solved for a viable .In BYJU’S, students will get the complete details of algebra, including its equations, terms, formulas, etc. Also, solve examples based on algebra concepts and practice worksheets to better understand the fundamentals of algebra. Algebra 1 and algebra 2 are the Maths courses included for students in their early and later stages of academics, respectively. Like, algebra 1 is the elementary algebra practised in classes 7,8 or sometimes 9, where basics of algebra are taught. But, algebra 2 is advanced algebra, which is practised at the high school level. The algebra problems will involve expressions, polynomials, the system of equations, real numbers, inequalities, etc. Learn more algebra symbols that are used in Maths.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2176, 1023, 9, 0, N'Computer Science Engineering', 1, CAST(N'2024-01-10T15:36:46.547' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2177, 1023, 9, 0, N'design, implementation, and management of information systems ', 1, CAST(N'2024-01-10T15:37:31.900' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2178, 1023, 9, 0, N'electrical and electronics engineering,', 1, CAST(N'2024-01-10T15:37:56.290' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2179, 1023, 11, 2176, N'Computer Science Engineering is a sub-discipline of Engineering, and the courses are offered at both undergraduate and postgraduate levels, ', 1, CAST(N'2024-01-10T15:38:33.237' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2180, 1023, 12, 2179, N'CS', 1, CAST(N'2024-01-10T15:39:08.337' AS DateTime), 1, N'Computer Science Engineering is a sub-discipline of Engineering, and the courses are offered at both undergraduate and postgraduate levels, such as BE Computer Science Engineering, BTech Computer Science Engineering, and M.Tech Computer Science Engineering degree programmes. B.Tech in computer science and M.Tech in computer science are popular undergraduate and postgraduate degree programmes. ', N'IT')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2181, 1023, 11, 2177, N'JAVA', 1, CAST(N'2024-01-10T15:39:33.650' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2182, 1023, 12, 2181, N'Language', 1, CAST(N'2024-01-10T15:40:07.907' AS DateTime), 1, N'Computer Science Engineering is a sub-discipline of Engineering, and the courses are offered at both undergraduate and postgraduate levels, such as BE Computer Science Engineering, BTech Computer Science Engineering, and M.Tech Computer Science Engineering degree programmes. B.Tech in computer science and M.Tech in computer science are popular undergraduate and postgraduate degree programmes. ', N'C++')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2183, 1023, 11, 2178, N'IT Testing', 1, CAST(N'2024-01-10T15:40:47.553' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2191, 1026, 1133, 0, N'Introduction to Physics', 1, CAST(N'2024-02-09T22:47:05.640' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2192, 1026, 1134, 2191, N'Understanding Physics', 1, CAST(N'2024-02-09T22:47:40.163' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2194, 1026, 1133, 0, N'Motion', 1, CAST(N'2024-02-09T22:49:26.203' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2195, 1026, 1134, 2194, N'Speed and Velocity', 1, CAST(N'2024-02-09T22:50:27.290' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2198, 1028, 1155, 0, N'1', 1, CAST(N'2024-02-15T15:12:04.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2199, 1028, 1155, 0, N'2', 1, CAST(N'2024-02-15T15:12:59.753' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2230, 1026, 1133, 0, N'Optics', 1, CAST(N'2024-02-27T10:41:15.033' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2231, 1026, 1134, 2230, N'Ray Optics and Optical Instruments', 1, CAST(N'2024-02-27T10:42:04.387' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2242, 1026, 1133, 0, N'Electromagnetic Induction', 1, CAST(N'2024-02-27T11:18:58.420' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2264, 1031, 1208, 0, N'Chapter 4: Genomics and Proteomics', 1, CAST(N'2024-02-27T11:50:45.830' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2268, 1031, 1208, 0, N'Chapter 5: Biotechnological Applications in Medicine', 1, CAST(N'2024-02-27T11:54:04.477' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2271, 1031, 1208, 0, N'Chapter 6: Agricultural Biotechnology', 1, CAST(N'2024-02-27T11:55:30.347' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2273, 1031, 1208, 0, N'Chapter 7: Environmental Biotechnology', 1, CAST(N'2024-02-27T11:56:26.880' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1119, 9, 73, 0, N'DISSERTATION : Topic Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s,', 1, CAST(N'2023-11-30T20:54:35.927' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2184, 1023, 12, 2183, N'software engineering. ', 1, CAST(N'2024-01-10T15:41:49.390' AS DateTime), 1, N'software engineering. A computer science engineer specialises in the theory of computation and the design of computational systems. Computer Science engineering courses also cover various streams such as electrical and electronics engineering, information technology, software engineering. 
+
+', N'Software methodology')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2190, 1024, 1132, 2189, N' Local Government and Administration', 1, CAST(N'2024-01-11T11:34:28.890' AS DateTime), 1, N'
+How many chapters are present in the CBSE Class 6 Social Science Syllabus?
+There are 11 chapters in History, 8 chapters in Political Science and 6 chapters in Geography. By going through the CBSE Class 6 syllabus, students can perform well in their final exams.
+Q2
+How to study the CBSE Class 6 Social Science History Syllabus?
+Students can study the CBSE Class 6 Social Science History Syllabus using the PDF given at BYJU’S. It contains the required details for students to write their exams well.
+Q3
+Where can I find the CBSE Class 6 Social Science Syllabus for free?
+You can find the CBSE Class 6 Social Syllabus for each part separately for free at BYJU’S. The PDF can be downloaded by clicking the link which will help students to answer the difficult questions effectively.', N'Chapter 1 – The Earth in the Solar System
+Chapter 2 – Globe: Latitudes and Longitudes
+Chapter 3 – Motions of the Earth
+Chapter 4 – Maps
+Chapter 5 – Major Domains of the Earth
+Chapter 6 – Our Country: India
+Get access to CBSE Class 6 study material in one place. Keep learning and stay tuned with BYJU’S for the latest update on CBSE/ICSE/State Board/Competitive Exams. Also, download the BYJU’S App for interactive study videos.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2193, 1026, 1135, 2192, N'Importance of Physics in Everyday Life', 1, CAST(N'2024-02-09T22:48:41.680' AS DateTime), 1, N'Real-life examples and demonstrations to illustrate the application of physics concepts in daily life.', N'To understand the relevance of physics in daily activities.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2197, 1027, 62, 0, N'Test', 1, CAST(N'2024-02-14T11:31:55.337' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2241, 1026, 1135, 2240, N'Magnetic Field Patterns', 1, CAST(N'2024-02-27T11:18:24.073' AS DateTime), 1, N'Understand the concept of magnetic field lines and their characteristics.', N'Use of iron filings, compass needles, and bar magnets to visualize magnetic fields.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2265, 1031, 1209, 2264, N'Topic 4.1: Genome Sequencing and Analysis Subtopic 4.1.1: DNA Sequencing Methods', 1, CAST(N'2024-02-27T11:52:07.197' AS DateTime), 1, N' Learn about different methods of DNA sequencing', N'Laboratory demonstrations of DNA sequencing techniques.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2266, 1031, 1209, 2264, N'Topic 4.1: Genome Sequencing and Analysis Subtopic 4.1.2: Genome Analysis Tools', 1, CAST(N'2024-02-27T11:52:37.957' AS DateTime), 1, N'Understand the tools and techniques used for genome analysis.', N'Computer-based analysis of genomic data.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2267, 1031, 1209, 2264, N'Topic 4.2: Proteomics and Protein Analysis Subtopic 4.2.1: Protein Structure and Function', 1, CAST(N'2024-02-27T11:53:40.140' AS DateTime), 1, N'Understand the structure-function relationship of proteins.', N'Structural analysis of proteins using spectroscopic techniques.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2269, 1031, 1209, 2268, N'Topic 5.1: Medical Biotechnology Subtopic 5.1.1: Pharmaceutical Biotechnology', 1, CAST(N'2024-02-27T11:54:35.893' AS DateTime), 1, N'Learn about the applications of biotechnology in drug discovery and development.', N'Case studies and discussions on the development of biopharmaceuticals.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2270, 1031, 1209, 2268, N'Topic 5.1: Medical Biotechnology Subtopic 5.1.2: Gene Therapy', 1, CAST(N'2024-02-27T11:55:09.230' AS DateTime), 1, N'Understand the principles and challenges of gene therapy.', N'Review of clinical trials and ethical considerations in gene therapy.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2276, 1031, 1208, 0, N'Chapter 8: Industrial Biotechnology', 1, CAST(N'2024-02-27T11:57:56.580' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2278, 1031, 1209, 2276, N'Topic 8.1: Industrial Enzymes Subtopic 8.1.2: Bioprocessing and Fermentation Technology', 1, CAST(N'2024-02-27T11:58:49.820' AS DateTime), 1, NULL, N' Hands-on')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2279, 23, 132, 1177, N'testing', 1, CAST(N'2024-02-29T15:11:04.510' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2282, 1032, 48, 0, N'test course', 1, CAST(N'2024-03-13T14:03:37.853' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2283, 1032, 49, 2282, N'test chapter', 1, CAST(N'2024-03-13T14:04:05.323' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2343, 1037, 1214, 0, N'Gravity', 1, CAST(N'2024-03-22T15:51:51.003' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2347, 1043, 1226, 0, N'Data Structure', 1, CAST(N'2024-04-09T12:01:15.817' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2348, 1043, 1227, 2347, N'Arrays', 1, CAST(N'2024-04-09T12:01:45.300' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2349, 1043, 1228, 2348, N'Introduction to arrays', 1, CAST(N'2024-04-09T12:02:27.177' AS DateTime), 1, N'Employ practical demonstrations and exercises to elucidate array concepts comprehensively.', N'Foster adeptness in array manipulation for effective problem-solving applications.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2350, 1043, 1228, 2348, N'Operations on arrays', 1, CAST(N'2024-04-09T12:02:54.473' AS DateTime), 1, N'Utilize practical examples and exercises to illustrate array operations comprehensively.', N'Foster a deep understanding of array manipulation techniques and their practical application in problem-solving scenarios.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1076, 6, 11, 1075, N'Facial Structure', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1077, 6, 12, 1076, N'Human Anatomy', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, N'Practical,Theory,Animation', N'drawing of human anatomy')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1078, 6, 11, 1075, N'Scene ', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1079, 6, 12, 1078, N'Nature Scenary ', 1, CAST(N'2023-10-09T00:00:00.000' AS DateTime), 1, N'Practical,Theory,Animation', N'drawing of natural scenary ')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1137, 18, 12, 1136, N'1: Introduction to Heat ', 1, CAST(N'2023-12-01T16:16:14.150' AS DateTime), 1, N'1: Thermal Conduction Experiments 2: Temperature Measurement 3: Heat Engine Analysis 4: Entropy Demonstrations', N'1: Investigate heat transfer through different materials. 2: Analyze the factors influencing thermal conductivity. 3: Use various thermometric devices to measure temperature. 4:  onvert temperature scales and compare results.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1138, 18, 12, 1136, N'2: Laws of Thermodynamics', 1, CAST(N'2023-12-01T16:17:11.850' AS DateTime), 1, N'1: Entropy Demonstrations', N'1: Demonstrate entropy changes in reversible and irreversible processes.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1161, 22, 73, 0, N'Q1', 1, CAST(N'2023-12-18T13:34:09.550' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1162, 22, 74, 1161, N'Q2', 1, CAST(N'2023-12-18T13:34:32.313' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1163, 22, 74, 1161, N'Q3', 1, CAST(N'2023-12-18T13:34:58.813' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1164, 22, 75, 1163, N'Test', 1, CAST(N'2023-12-18T13:35:49.190' AS DateTime), 1, N'Testing Objective', N'Testing Methodology')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1165, 14, 101, 1108, N'Test Chem', 1, CAST(N'2023-12-18T15:43:56.500' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1166, 14, 102, 1165, N'module  Atom', 1, CAST(N'2023-12-18T15:44:27.110' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1167, 14, 103, 1166, N'Types of atom', 1, CAST(N'2023-12-18T15:44:57.923' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1168, 14, 104, 1167, N'Test QNA', 1, CAST(N'2023-12-18T15:45:32.127' AS DateTime), 1, N'Man has been exposed to changing surroundings ever since he came into existence. He has been quite interested in learning about his surroundings and studying and explaining the things that are happening around him. He has conducted experiments and observations to gather information as a result of his interest. Through the decades, it has also been in charge of many people’s research endeavours around the globe. Systematizing and organising the knowledge acquired in this way was absolutely necessary for the good of humanity.', N'MethodologyMan has been exposed to changing surroundings ever since he came into existence. He has been quite interested in learning about his surroundings and studying and explaining the things that are happening around him. He has conducted experiments and observations to gather information as a result of his interest. Through the decades, it has also been in charge of many people’s research endeavours around the globe. Systematizing and organising the knowledge acquired in this way was absolutely necessary for the good of humanity.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1169, 14, 103, 1166, N'Q1', 1, CAST(N'2023-12-18T15:46:01.687' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1171, 14, 104, 1169, N'Acids, Bases, and Salts', 1, CAST(N'2023-12-18T16:03:15.627' AS DateTime), 1, N' Similarly, many bases are found such as lime water. We use many of these acids in our day-to-day life, such as vinegar or acetic acid in the kitchen, boric acid for laundry, baking soda for the purpose of cooking, washing soda for cleaning, etc.', N'Many acids and bases occur naturally in nature, such as citric acid in fruits like orange, lemon, etc, tartaric acid in tamarind, malic acid in apples, and lactic acid in milk and milk products, hydrochloric acid in gastric juices.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2185, 1024, 1130, 0, N'Mechanics', 1, CAST(N'2024-01-11T11:16:50.113' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2186, 1024, 1131, 2185, N'Planet', 1, CAST(N'2024-01-11T11:17:49.400' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2187, 1024, 1130, 0, N'The First Farmers and Herders', 1, CAST(N'2024-01-11T11:18:35.887' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2188, 1024, 1130, 0, N'Contacts with Distant lands', 1, CAST(N'2024-01-11T11:19:12.450' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2189, 1024, 1131, 2188, N'Globe', 1, CAST(N'2024-01-11T11:23:31.933' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2272, 1031, 1209, 2271, N'Topic 6.1: Transgenic Crops Subtopic 6.1.1: Genetic Modification of Plants', 1, CAST(N'2024-02-27T11:55:56.987' AS DateTime), 1, N'Learn about the development and cultivation of genetically modified crops.', N'Field visits to biotech farms and demonstration of transgenic crop cultivation.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2358, 1043, 1228, 2356, N'RDBMS', 1, CAST(N'2024-04-09T12:25:06.767' AS DateTime), 1, N'Practical examples and exercises.', N'Proficiency in relational database design and management.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1144, 18, 11, 1143, N'States of Matter', 1, CAST(N'2023-12-13T12:58:12.803' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1145, 18, 12, 1144, N'1: Solid, Liquid, and Gas  2: Physical and Chemical Changes', 1, CAST(N'2023-12-13T13:00:06.113' AS DateTime), 1, N'1: Observe and record state changes in various substances. 2: Understand the concept of energy transfer during state changes. 3: Use a particle model to explain the behavior of particles in different states. 4: Relate particle behavior to macroscopic properties. Topic 2: Physical and Chemical Changes', N'1: State Changes Experiment 2: Particle Model Simulation')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1146, 18, 12, 1142, N'1: The Scientific Method', 1, CAST(N'2023-12-13T13:08:45.263' AS DateTime), 1, N' 1: Understand the steps of the scientific method by conducting a basic experiment. 2: Record and analyze data to draw conclusions.', N'1: Conduct Simple Experiments 2: Science Fair Project')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1147, 18, 9, 0, N'Matter and Energy', 1, CAST(N'2023-12-13T13:15:26.137' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1148, 18, 11, 1147, N'Atomic Structure', 1, CAST(N'2023-12-13T13:15:48.980' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1149, 18, 12, 1148, N'1: Structure of the Atom 2: Chemical Bonding', 1, CAST(N'2023-12-13T13:18:09.587' AS DateTime), 1, N' 1: Explore historical models of the atom. 2: Compare modern atomic models.', N'1: Atomic Models Investigation 2: Subatomic Particle Discovery 3. Bonding Simulations')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2201, 1028, 1155, 0, N'3', 1, CAST(N'2024-02-15T15:20:23.040' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2274, 1031, 1209, 2273, N'Topic 7.1: Bioremediation Subtopic 7.1.1: Microbial Biodegradation', 1, CAST(N'2024-02-27T11:56:50.423' AS DateTime), 1, N' Learn about the role of microorganisms in environmental remediation.', N' Study of microbial degradation pathways and environmental cleanup strategies.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2275, 1031, 1209, 2273, N'Topic 7.1: Bioremediation Subtopic 7.1.2: Biogeochemical Cycles', 1, CAST(N'2024-02-27T11:57:20.890' AS DateTime), 1, N' Understand the cycling of nutrients and pollutants in the environment.', N'Fieldwork and data analysis on biogeochemical processes in natural ecosystems.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2277, 1031, 1209, 2276, N'Topic 8.1: Industrial Enzymes Subtopic 8.1.1: Enzyme Production and Applications', 1, CAST(N'2024-02-27T11:58:16.303' AS DateTime), 1, N'Learn about the applications of enzymes in industrial processes.', N'Laboratory experiments on enzyme kinetics and industrial enzyme production.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2286, 1033, 1214, 0, N'Math', 1, CAST(N'2024-03-14T12:18:25.900' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2288, 1, 7, 20, N'GST', 1, CAST(N'2024-03-15T11:51:09.450' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2357, 1043, 1228, 2356, N'Basics concepts of DBMS', 1, CAST(N'2024-04-09T12:24:11.550' AS DateTime), 1, N'Real-world examples and interactive exercises.', N'Comprehensive understanding of DBMS basics for effective data management.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1170, 14, 104, 1169, N'test Chem', 1, CAST(N'2023-12-18T16:00:18.770' AS DateTime), 1, N'‘Science’ can be defined as the systematic study of the natural universe, its structure, and everything it encompasses. Due to the immensity of the natural universe, science has been divided into several disciplines that deal with certain aspects of the universe. The three primary subcategories of science under which these disciplines can be grouped are:  The Formal Sciences: Involves the study of the language disciplines that concern formal systems. Examples of scientific disciplines that fall under this category include logic and mathematics. Can be thought of as the “language of science”. The Natural Sciences: Involves the study of natural phenomena through experiments and observations. Chemistry, physics, and biology fall under this category of science. The Social Sciences: Involves the study of human societies and the relationships between the humans that dwell in these societies. Examples of scientific disciplines that fall under this category include psychology, sociology, and economics.', N'‘Science’ can be defined as the systematic study of the natural universe, its structure, and everything it encompasses. Due to the immensity of the natural universe, science has been divided into several disciplines that deal with certain aspects of the universe. The three primary subcategories of science under which these disciplines can be grouped are:  The Formal Sciences: Involves the study of the language disciplines that concern formal systems. Examples of scientific disciplines that fall under this category include logic and mathematics. Can be thought of as the “language of science”. The Natural Sciences: Involves the study of natural phenomena through experiments and observations. Chemistry, physics, and biology fall under this category of science. The Social Sciences: Involves the study of human societies and the relationships between the humans that dwell in these societies. Examples of scientific disciplines that fall under this category include psychology, sociology, and economics.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2218, 1030, 1205, 0, N'1', 1, CAST(N'2024-02-21T12:00:53.757' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2219, 1030, 1206, 2218, N'Some Basic Concepts', 1, CAST(N'2024-02-21T12:01:39.477' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2220, 1030, 1207, 2219, N'Nature of matter', 1, CAST(N'2024-02-21T12:02:26.507' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2221, 1030, 1205, 0, N'2', 1, CAST(N'2024-02-21T12:02:52.223' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2222, 1030, 1206, 2221, N'Structure of Atom', 1, CAST(N'2024-02-21T12:03:17.593' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2223, 1030, 1207, 2222, N'Atomic models', 1, CAST(N'2024-02-21T12:03:47.713' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2224, 1030, 1205, 0, N'3', 1, CAST(N'2024-02-21T12:04:05.290' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2225, 1030, 1206, 2224, N'States Of Matter', 1, CAST(N'2024-02-21T12:04:48.897' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2226, 1030, 1207, 2225, N'Thermal Energy', 1, CAST(N'2024-02-21T12:05:31.150' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2227, 1030, 1205, 0, N'4', 1, CAST(N'2024-02-21T12:05:50.390' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2228, 1030, 1206, 2227, N'Chemical Bonding', 1, CAST(N'2024-02-21T12:06:33.747' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2229, 1030, 1207, 2228, N'Molecular Orbital Theory', 1, CAST(N'2024-02-21T12:07:55.773' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2232, 1026, 1135, 2231, N'Reflection of light', 1, CAST(N'2024-02-27T10:49:38.553' AS DateTime), 1, N'This concept is used to transmit and receive electrical signals.', N'To understand total internal reflection and its applications.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2233, 1026, 1133, 0, N'Electric Current', 1, CAST(N'2024-02-27T11:10:59.257' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2234, 1026, 1134, 2233, N'Basics of Electric Circuits', 1, CAST(N'2024-02-27T11:11:38.963' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2235, 1026, 1135, 2234, N'Components of an Electric Circuit', 1, CAST(N'2024-02-27T11:12:50.433' AS DateTime), 1, N'Understand the fundamental elements of electric circuits.', N'Constructing circuits using circuit components and analyzing their behavior.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2236, 1026, 1133, 0, N'Heating Effect of Electric Current', 1, CAST(N'2024-02-27T11:13:27.680' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2237, 1026, 1134, 2236, N'Joule''s Law and Electric Power', 1, CAST(N'2024-02-27T11:15:06.757' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2238, 1026, 1135, 2237, N'Joule''s Law of Heating', 1, CAST(N'2024-02-27T11:16:14.693' AS DateTime), 1, N'Understand the relationship between current, resistance, and heat produced.', N'Experimentation with resistors, ammeters, and voltmeters to measure heat produced.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2239, 1026, 1133, 0, N'Magnetic Field and Its Properties', 1, CAST(N'2024-02-27T11:16:53.367' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2240, 1026, 1134, 2239, N'Magnetic Field Lines', 1, CAST(N'2024-02-27T11:17:33.120' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2243, 1026, 1133, 0, N'Electromagnetic Induction', 1, CAST(N'2024-02-27T11:20:18.160' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2244, 1026, 1134, 2243, N'Faraday''s Law and Lenz''s Law', 1, CAST(N'2024-02-27T11:20:52.567' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2246, 1026, 1133, 0, N'Conventional and Non-Conventional Sources of Energy', 1, CAST(N'2024-02-27T11:22:54.323' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2247, 1026, 1134, 2246, N'Fossil Fuels', 1, CAST(N'2024-02-27T11:23:28.323' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2249, 1026, 1133, 0, N'Sound', 1, CAST(N'2024-02-27T11:25:03.310' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2250, 1026, 1134, 2249, N'Nature and Propagation of Sound Waves', 1, CAST(N'2024-02-27T11:25:51.480' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2251, 1026, 1135, 2250, N'Characteristics of Sound Waves', 1, CAST(N'2024-02-27T11:27:56.950' AS DateTime), 1, N'Understand the properties and behavior of sound waves.', N'Experiments with tuning forks, resonance tubes, and sound meters.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2252, 1026, 1133, 0, N'Reflection of Sound', 1, CAST(N'2024-02-27T11:28:35.030' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2253, 1026, 1134, 2252, N'Laws of Reflection of Sound', 1, CAST(N'2024-02-27T11:29:09.467' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1181, 23, 130, 0, N'Absolute value', 1, CAST(N'2023-12-22T13:42:48.963' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1182, 23, 131, 1181, N'Unit 8: Absolute value equations, functions, & inequalities · Graphs of absolute value functions: Absolute value ... absolute value inequalities: Absolute value ...', 1, CAST(N'2023-12-22T13:43:10.430' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1183, 23, 132, 1182, N'What are the chapters in algebra? The topics which form a part of elementary algebra include equations, formation, manipulation, evaluation of expressions, equalities, inequalities, equation solving (algebraic as well as linear), and so on. This is a more detailed and intermediate step in algebra.', 1, CAST(N'2023-12-22T13:44:08.197' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1184, 23, 132, 1182, N'Algebra is one of the various branches of Mathematics. It deals with symbols and variables. Various arithmetical statements and operations such as equations, terms, expressions to draw a relationship between objects which are not constant, and do change over time. These objects in basic algebra are also termed ‘variables’.   Algebra includes several forms of mathematical representations, such as real numbers, complex numbers, vectors, matrices, and so on. Equations form a crucial part of algebraic applications. Different algebraic rules are used to solve elementary equations to study variables.', 1, CAST(N'2023-12-22T13:44:43.963' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (1185, 23, 133, 1184, N'Quiz 2', 1, CAST(N'2023-12-22T13:45:21.837' AS DateTime), 1, N' Similarly, many bases are found such as lime water. We use many of these acids in our day-to-day life, such as vinegar or acetic acid in the kitchen, boric acid for laundry, baking soda for the purpose of cooking, washing soda for cleaning, etc.', N'Man has been exposed to changing surroundings ever since he came into existence. He has been quite interested in learning about his surroundings and studying and explaining the things that are happening around him. He has conducted experiments and observations to gather information as a result of his interest. Through the decades, it has also been in charge of many people’s research endeavours around the globe. Systematizing and organising the knowledge acquired in this way was absolutely necessary for the good of humanity.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2196, 1026, 1135, 2195, N'Speed and Velocity', 1, CAST(N'2024-02-09T22:52:08.623' AS DateTime), 1, N'Classroom discussions, group activities, and practical exercises involving measuring distances and time intervals.', N'To differentiate between speed and velocity and calculate them.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2200, 1028, 1155, 0, N'4', 1, CAST(N'2024-02-15T15:19:32.533' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2202, 1028, 1191, 2198, N'Introduction', 1, CAST(N'2024-02-15T15:35:06.970' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2203, 1028, 1192, 2202, N'Indian Economy', 1, CAST(N'2024-02-15T15:38:54.050' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2204, 1028, 1193, 2203, N'Global perspective', 1, CAST(N'2024-02-15T15:39:54.117' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2205, 1028, 1194, 2204, N'Domestic Outlook', 1, CAST(N'2024-02-15T15:41:19.360' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2206, 1028, 1191, 2199, N'Planning in India', 1, CAST(N'2024-02-15T15:43:40.583' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2207, 1028, 1192, 2206, N'Genesis', 1, CAST(N'2024-02-15T15:45:50.533' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2208, 1028, 1193, 2207, N'Market Economy', 1, CAST(N'2024-02-15T15:47:04.430' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2209, 1028, 1194, 2208, N'Inclusive Growth', 1, CAST(N'2024-02-15T15:47:56.140' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2210, 1028, 1191, 2201, N'Looking Outward', 1, CAST(N'2024-02-15T15:48:47.397' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2211, 1028, 1192, 2210, N'Need to look outward', 1, CAST(N'2024-02-15T15:49:34.950' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2212, 1028, 1193, 2211, N'Need for Imports and Exports', 1, CAST(N'2024-02-15T15:50:41.110' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2213, 1028, 1194, 2212, N'Flip side to trade', 1, CAST(N'2024-02-15T15:51:56.937' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2214, 1028, 1191, 2200, N'Going Forward', 1, CAST(N'2024-02-15T15:52:46.203' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2215, 1028, 1192, 2214, N'Trade Strategies', 1, CAST(N'2024-02-15T15:53:30.757' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2216, 1028, 1193, 2215, N'Branding India ', 1, CAST(N'2024-02-15T15:54:38.650' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2217, 1028, 1194, 2216, N'National IPR Policy', 1, CAST(N'2024-02-15T15:55:43.290' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2245, 1026, 1135, 2244, N'Faraday''s Law of Electromagnetic Induction', 1, CAST(N'2024-02-27T11:21:54.943' AS DateTime), 1, N'Understand the principle of electromagnetic induction and its applications.', N'Demonstrations with coils, magnets, and galvanometers to observe induced currents.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2248, 1026, 1135, 2247, N'Formation, Extraction, and Utilization', 1, CAST(N'2024-02-27T11:24:27.350' AS DateTime), 1, N'Understand the origin, extraction methods, and environmental impacts of fossil fuels.', N'Multimedia presentations, case studies, and discussions on fossil fuel resources.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2254, 1026, 1135, 2253, N'Reflection of Sound Waves', 1, CAST(N'2024-02-27T11:30:17.910' AS DateTime), 1, N'Understand the principles of reflection of sound and its applications.', N'Experiments with sound reflectors and measuring sound intensity.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2255, 1031, 1208, 0, N' Chapter 1: Introduction to Biotechnology', 1, CAST(N'2024-02-27T11:34:25.653' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2280, 23, 133, 2279, N'jj', 1, CAST(N'2024-02-29T16:44:08.607' AS DateTime), 1, N'jhabhbdwhb', N'ijduiwabdubwd')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2284, 1033, 1214, 0, N'Science', 1, CAST(N'2024-03-14T12:16:42.323' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2285, 1033, 1215, 2284, N'Gravity', 1, CAST(N'2024-03-14T12:17:36.700' AS DateTime), 1, N'A quick brown fox jumps over the lazy dog.', N'A quick brown fox jumps over the lazy dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2290, 1030, 1205, 0, N'2', 1, CAST(N'2024-03-19T17:38:00.700' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2291, 1030, 1206, 2290, N'States of Matter', 1, CAST(N'2024-03-19T17:38:57.550' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2292, 1030, 1206, 2290, N'Solid State', 1, CAST(N'2024-03-19T17:39:53.847' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2293, 1030, 1207, 2291, N'Solid State', 1, CAST(N'2024-03-19T17:41:19.737' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2256, 1031, 1209, 2255, N'Topic 1.1: Basics of Biotechnology                                                                  Subtopic 1.1.1: Definition and Scope', 1, CAST(N'2024-02-27T11:35:35.830' AS DateTime), 1, N'Understand the definition and scope of biotechnology.', N'Classroom lecture and discussion.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2257, 1031, 1209, 2255, N'Topic 1.1: Basics of Biotechnology     Subtopic 1.1.2: Historical Perspective', 1, CAST(N'2024-02-27T11:36:15.180' AS DateTime), 1, N'Learn about the historical development of biotechnology and its impact.', N'Presentation of historical milestones in biotechnology.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2258, 1031, 1208, 0, N'Chapter 2: Biomolecules and Cell Biology', 1, CAST(N'2024-02-27T11:36:39.820' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2259, 1031, 1209, 2258, N'Topic 2.1: Structure and Function of Biomolecules   Subtopic 2.1.1: Proteins, Nucleic Acids, Carbohydrates, Lipids', 1, CAST(N'2024-02-27T11:37:11.007' AS DateTime), 1, N'Understand the structure and function of major biomolecules.', N' Laboratory experiments to isolate and analyze biomolecules.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2260, 1031, 1209, 2258, N'Topic 2.2: Cell Biology   Subtopic 2.2.1: Cell Structure and Organelles', 1, CAST(N'2024-02-27T11:38:26.200' AS DateTime), 1, N'Understand the structure and function of cellular components', N'Microscopic examination of cells and organelles.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2261, 1031, 1208, 0, N'Chapter 3: Genetic Engineering', 1, CAST(N'2024-02-27T11:41:32.167' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2262, 1031, 1209, 2261, N'Topic 3.1: Techniques of Genetic Engineering  Subtopic 3.1.1: Recombinant DNA Technology', 1, CAST(N'2024-02-27T11:42:07.530' AS DateTime), 1, N'Learn the principles and applications of recombinant DNA technology.', N'Hands-on laboratory experiments on recombinant DNA techniques.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2263, 1031, 1209, 2261, N'Topic 3.1: Techniques of Genetic Engineering Subtopic 3.1.2: Gene Cloning and Expression', 1, CAST(N'2024-02-27T11:42:47.483' AS DateTime), 1, N'Understand the process of gene cloning and expression.', N'Practical sessions on gene cloning and expression techniques.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2281, 1031, 1208, 0, N'Chapter 9', 1, CAST(N'2024-03-12T09:26:03.517' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2287, 1033, 1215, 2286, N'Addition', 1, CAST(N'2024-03-14T12:18:43.277' AS DateTime), 1, N'A quick brown fox jumps over the lazy dog.', N'A quick brown fox jumps over the lazy dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2289, 1030, 1207, 2219, N'Atomic Structure', 1, CAST(N'2024-03-19T17:36:14.737' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2294, 1030, 1205, 0, N'3', 1, CAST(N'2024-03-19T17:41:44.063' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2295, 1030, 1206, 2294, N'Surface Chemistry', 1, CAST(N'2024-03-19T17:42:18.877' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2296, 1030, 1207, 2295, N'Colloids', 1, CAST(N'2024-03-19T17:43:07.140' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2297, 1030, 1205, 0, N'4', 1, CAST(N'2024-03-19T17:43:35.280' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2298, 1030, 1206, 2297, N'Coordination Compounds', 1, CAST(N'2024-03-19T17:44:19.077' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2299, 1030, 1207, 2298, N'Bonding', 1, CAST(N'2024-03-19T17:44:51.060' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2300, 1030, 1205, 0, N'5', 1, CAST(N'2024-03-19T17:45:28.420' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2301, 1030, 1206, 2300, N'Alcohols , Phenols and Ethers', 1, CAST(N'2024-03-19T17:46:36.450' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2302, 1030, 1207, 2301, N'Chemical Reactions', 1, CAST(N'2024-03-19T17:47:13.713' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2303, 1030, 1205, 0, N'6', 1, CAST(N'2024-03-19T17:47:53.243' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2304, 1030, 1206, 2303, N'Biomolecules', 1, CAST(N'2024-03-19T17:48:25.277' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2305, 1030, 1207, 2304, N'Proteins', 1, CAST(N'2024-03-19T17:49:00.680' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2306, 1030, 1205, 0, N'7', 1, CAST(N'2024-03-19T17:49:30.557' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2307, 1030, 1206, 2306, N'Polymers', 1, CAST(N'2024-03-19T17:50:00.587' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2308, 1030, 1207, 2307, N'Classification of Polymers', 1, CAST(N'2024-03-19T17:52:03.170' AS DateTime), 0, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2309, 1030, 1207, 2219, N'Atomic Structure', 1, CAST(N'2024-03-19T17:54:49.440' AS DateTime), 1, N'To understand the structure of atoms, including the organization of electrons, protons, and neutrons, and to explain their properties and interactions based on atomic theory.', N'Study of the arrangement and behavior of particles within atoms through experimental observations and theoretical models.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2310, 1030, 1207, 2291, N'Solid State', 1, CAST(N'2024-03-19T17:56:41.957' AS DateTime), 1, N'To comprehend the arrangement of particles in solids, differentiate between different types of solid structures, analyze their mechanical, thermal, and electrical properties, and explore their applications in various fields.', N'Investigation of the crystalline and amorphous structures of solids, their properties, and the factors influencing their formation through experimental techniques and theoretical models.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2311, 1030, 1207, 2295, N'Colloids', 1, CAST(N'2024-03-19T17:58:50.883' AS DateTime), 1, N'Understanding colloidal properties, stability, and applications in various industries.', N'Study of dispersed phase and dispersion medium interactions, utilizing experimental techniques like precipitation and condensation.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2333, 1035, 1214, 0, N'Gravity', 1, CAST(N'2024-03-22T15:39:12.963' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2334, 1035, 1215, 2333, N'Test_chap 2003', 1, CAST(N'2024-03-22T15:39:51.840' AS DateTime), 1, N'A quick brown fox jumps over the lay dog.', N'A quick brown fox jumps over the lay dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2335, 1035, 1214, 0, N'Math', 1, CAST(N'2024-03-22T15:40:09.713' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2336, 1035, 1215, 2335, N'Division', 1, CAST(N'2024-03-22T15:41:10.090' AS DateTime), 1, N'A quick brown fox jumps over the lay dog.', N'A quick brown fox jumps over the lay dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2337, 1035, 1215, 2335, N'Multiplication', 1, CAST(N'2024-03-22T15:41:32.887' AS DateTime), 1, N'A quick brown fox jumps over the lay dog.', N'A quick brown fox jumps over the lay dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2338, 1036, 1214, 0, N'English', 1, CAST(N'2024-03-22T15:45:53.023' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2339, 1036, 1215, 2338, N'Vowels', 1, CAST(N'2024-03-22T15:46:31.100' AS DateTime), 1, N'A quick brown fox jumps over the lazy dog.', N'A quick brown fox jumps over the lazy dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2340, 1036, 1215, 2338, N'Reading', 1, CAST(N'2024-03-22T15:47:02.413' AS DateTime), 1, N'A quick brown fox jumps over the lazy dog.', N'A quick brown fox jumps over the lazy dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2312, 1030, 1207, 2298, N'Bonding', 1, CAST(N'2024-03-19T18:00:58.260' AS DateTime), 1, N'Understanding the nature of chemical bonds and their impact on substance properties and reactivity.', N'Study of bond formation and properties through experimental and theoretical approaches.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2313, 1030, 1207, 2301, N'Chemical Reactions', 1, CAST(N'2024-03-19T18:03:08.540' AS DateTime), 1, N'Understanding reactivity patterns and applications of these compounds in organic synthesis.', N'Study of preparation methods and chemical reactions of alcohols, phenols, and ethers using experimental techniques.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2314, 1030, 1207, 2304, N'Proteins', 1, CAST(N'2024-03-19T18:05:01.900' AS DateTime), 1, N'Understanding protein roles in biological systems and their applications in various fields.', N'Study of protein structure and function through experimental techniques.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2315, 1030, 1207, 2307, N'Classification of Polymers', 1, CAST(N'2024-03-19T18:06:46.900' AS DateTime), 1, N'Understanding the various categories of polymers and their relationships with structure and properties.', N'Classifying polymers based on structure, synthesis, and properties.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2316, 16, 1214, 0, N'T4-2003', 1, CAST(N'2024-03-20T18:12:34.240' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2317, 16, 1215, 2316, N'Test_chap 2003', 1, CAST(N'2024-03-20T18:13:41.600' AS DateTime), 1, N'2.A quick brown fox jumps over the lazy dog.', N'1.A quick brown fox jumps over the lazy dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2318, 1034, 1223, 0, N'The World Around Us', 1, CAST(N'2024-03-22T12:45:03.187' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2319, 1034, 1224, 2318, N'Oceans', 1, CAST(N'2024-03-22T12:45:45.373' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2320, 1034, 1225, 2319, N'Introduction Of Oceans', 1, CAST(N'2024-03-22T12:47:45.497' AS DateTime), 1, N'Analyzing satellite imagery and oceanographic data.', N'To understand the physical characteristics and distribution of ocean features.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2321, 1034, 1223, 0, N'Exploring Our Planet', 1, CAST(N'2024-03-22T12:48:34.340' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2322, 1034, 1224, 2321, N'Landfroms and Bodies of Water', 1, CAST(N'2024-03-22T12:49:10.027' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2323, 1034, 1225, 2322, N'Mountains and Valleys', 1, CAST(N'2024-03-22T12:52:04.023' AS DateTime), 1, N'Field surveys and mapping.', N'To study the formation and distribution of mountains and valleys.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2324, 1034, 1223, 0, N'Our Solar System', 1, CAST(N'2024-03-22T12:55:19.333' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2325, 1034, 1224, 2324, N'Planets', 1, CAST(N'2024-03-22T12:55:50.553' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2326, 1034, 1225, 2325, N'The Inner Plantes', 1, CAST(N'2024-03-22T12:56:24.660' AS DateTime), 1, N'Observation through telescopes and space probes.', N'To examine the composition, surface features, and atmospheric conditions of inner planets.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2327, 1034, 1223, 0, N'Ecosystem', 1, CAST(N'2024-03-22T12:58:04.190' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2328, 1034, 1224, 2327, N'Biomes', 1, CAST(N'2024-03-22T12:59:26.550' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2329, 1034, 1225, 2328, N'Tropical Rainforests', 1, CAST(N'2024-03-22T13:00:23.707' AS DateTime), 1, N'Field observations and remote sensing.', N'To study the biodiversity, climate, and ecological dynamics of tropical rainforests.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2330, 1034, 1223, 0, N'Population Geography', 1, CAST(N'2024-03-22T13:01:47.127' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2331, 1034, 1224, 2330, N'Population Distribution', 1, CAST(N'2024-03-22T13:02:35.800' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2332, 1034, 1225, 2331, N'Factors Affecting Population Distribution', 1, CAST(N'2024-03-22T13:03:09.063' AS DateTime), 1, N'Data analysis and geographical modeling.', N'To identify and understand the factors influencing the spatial distribution of human populations.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2351, 1043, 1226, 0, N'Boolean Algebra', 1, CAST(N'2024-04-09T12:03:34.957' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2352, 1043, 1227, 2351, N'Basics concepts of Boolean Algebra', 1, CAST(N'2024-04-09T12:04:26.080' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2353, 1043, 1228, 2352, N'Logic gates and truth table', 1, CAST(N'2024-04-09T12:05:13.910' AS DateTime), 1, N'Use interactive demonstrations for understanding logic gates and truth tables practically.', N'Enable effective analysis and design of digital circuits through a comprehensive grasp of logic gates and truth tables.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2354, 1043, 1228, 2352, N'Laws of Boolean Algebra', 1, CAST(N'2024-04-09T12:06:09.610' AS DateTime), 1, N'Employ practical examples to demonstrate the application of Boolean algebra laws.', N'Enable students to effectively apply Boolean algebra laws for simplification and analysis of logical expressions and digital circuits.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2355, 1043, 1226, 0, N'DBMS', 1, CAST(N'2024-04-09T12:22:00.363' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2356, 1043, 1227, 2355, N'Introduction to DBMS', 1, CAST(N'2024-04-09T12:22:50.940' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2341, 1036, 1214, 0, N'Bengali', 1, CAST(N'2024-03-22T15:47:15.553' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2342, 1036, 1215, 2341, N'Akash Patal', 1, CAST(N'2024-03-22T15:49:17.037' AS DateTime), 1, N'A quick brown fox jumps over the lazy dog.', N'A quick brown fox jumps over the lazy dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2344, 1037, 1215, 2343, N'Newton Law', 1, CAST(N'2024-03-22T15:54:33.343' AS DateTime), 1, N'A quick brown fox jumps over the lazy dog.', N'A quick brown fox jumps over the lazy dog.')
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2345, 17, 1214, 0, N'Biology', 1, CAST(N'2024-03-22T15:56:57.137' AS DateTime), 1, NULL, NULL)
+GO
+INSERT [dbo].[T_ERP_Subject_Structure] ([I_Subject_Structure_ID], [I_Subject_Structure_Header_ID], [I_Subject_Template_ID], [I_Parent_Subject_Structure_ID], [S_Name], [I_CreatedBy], [Dt_CreatedAt], [I_Status], [Methodology], [Objective]) VALUES (2346, 17, 1215, 2345, N'organization', 1, CAST(N'2024-03-22T15:58:08.183' AS DateTime), 1, N'.', N'.')
+GO
+SET IDENTITY_INSERT [dbo].[T_ERP_Subject_Structure] OFF
+GO
+SET IDENTITY_INSERT [dbo].[T_Marital_Status] ON 
+GO
+INSERT [dbo].[T_Marital_Status] ([I_Marital_Status_ID], [S_Marital_Status], [I_Status], [S_Crtd_By], [Dt_Crtd_On], [S_Updt_By], [Dt_Updt_On]) VALUES (1, N'Single', 1, N'dba', CAST(N'2012-12-01T00:00:00.000' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[T_Marital_Status] ([I_Marital_Status_ID], [S_Marital_Status], [I_Status], [S_Crtd_By], [Dt_Crtd_On], [S_Updt_By], [Dt_Updt_On]) VALUES (2, N'Married', 1, N'dba', CAST(N'2012-12-01T00:00:00.000' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[T_Marital_Status] ([I_Marital_Status_ID], [S_Marital_Status], [I_Status], [S_Crtd_By], [Dt_Crtd_On], [S_Updt_By], [Dt_Updt_On]) VALUES (3, N'Widow', 1, N'dba', CAST(N'2012-12-21T11:46:04.000' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[T_Marital_Status] ([I_Marital_Status_ID], [S_Marital_Status], [I_Status], [S_Crtd_By], [Dt_Crtd_On], [S_Updt_By], [Dt_Updt_On]) VALUES (4, N'Divorced', 1, N'dba', CAST(N'2012-12-21T11:46:04.000' AS DateTime), NULL, NULL)
+GO
+SET IDENTITY_INSERT [dbo].[T_Marital_Status] OFF
+GO
+
+
+
+
 
