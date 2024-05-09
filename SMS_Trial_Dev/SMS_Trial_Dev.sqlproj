@@ -3892,7 +3892,6 @@
     <Build Include="Schema\SMManagement.sql" />
     <Build Include="Schema\STUDENTFEATURES.sql" />
     <Build Include="Schema\Role.sql" />
-    <Build Include="Linked Server\PROD.sql" />
     <Build Include="Stored Procedures\Procedure1.sql" />
   </ItemGroup>
   <ItemGroup>
