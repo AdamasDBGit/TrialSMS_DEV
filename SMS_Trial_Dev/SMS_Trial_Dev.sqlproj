@@ -2118,7 +2118,6 @@
     <Build Include="Stored Procedures\Procs1\uspGetAWSStudentMarksForAPI.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAWSStudentMarksForAPI_BACKUP.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAWSStudentMarksForAPI_BKPOCT2022.sql" />
-    <Build Include="Stored Procedures\Procs1\uspGetBankListFromERP.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBasicPlansForRecommendedExtendedPlans.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBatchANDBranchTransferReport.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBatchDetailsForAPI.sql" />
