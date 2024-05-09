@@ -60,7 +60,6 @@
     <Folder Include="Properties" />
     <Folder Include="Tables\" />
     <Folder Include="Views\" />
-    <Folder Include="Security\" />
     <Folder Include="Functions\" />
     <Folder Include="Stored Procedures\" />
     <Folder Include="Stored Procedures\Procs1\" />
@@ -68,6 +67,7 @@
     <Folder Include="Stored Procedures\Procs3\" />
     <Folder Include="Database Triggers\" />
     <Folder Include="User Defined Types\" />
+    <Folder Include="Schema" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\T_Courier_Master.sql" />
@@ -1087,50 +1087,6 @@
     <Build Include="Views\GetAttendanceDataD2.sql" />
     <Build Include="Views\AttendanceDataAllEntities.sql" />
     <Build Include="Views\LMS_Student_Data.sql" />
-    <Build Include="Security\NTUser.sql" />
-    <Build Include="Security\NT AUTHORITY_NETWORK SERVICE.sql" />
-    <Build Include="Security\Arindam.sql" />
-    <Build Include="Security\DCCReadOnly.sql" />
-    <Build Include="Security\azraalikhan.sql" />
-    <Build Include="Security\purbasha.sql" />
-    <Build Include="Security\smartsupport.sql" />
-    <Build Include="Security\avishekdas.sql" />
-    <Build Include="Security\susmita.sql" />
-    <Build Include="Security\TempSA.sql" />
-    <Build Include="Security\sarifmondal.sql" />
-    <Build Include="Security\TridipChatterjee.sql" />
-    <Build Include="Security\OracleRice.sql" />
-    <Build Include="Security\Samimext.sql" />
-    <Build Include="Security\SomaPal.sql" />
-    <Build Include="Security\DebashisCloud.sql" />
-    <Build Include="Security\SudiptaGhosh.sql" />
-    <Build Include="Security\SPal.sql" />
-    <Build Include="Security\SPal_1.sql" />
-    <Build Include="Security\PNandi.sql" />
-    <Build Include="Security\PNandi_1.sql" />
-    <Build Include="Security\Parichay!Nandi.sql" />
-    <Build Include="Security\Parichay!Nandi_1.sql" />
-    <Build Include="Security\tridipLMS.sql" />
-    <Build Include="Security\tridipLMS_1.sql" />
-    <Build Include="Security\TridipAIS.sql" />
-    <Build Include="Security\TridipAIS_1.sql" />
-    <Build Include="Security\CCUHOSMSRNDSRV1_Administrator.sql" />
-    <Build Include="Security\CCUHOSMSRNDSRV1_Administrator_1.sql" />
-    <Build Include="Security\abhikp.sql" />
-    <Build Include="Security\abhikp_1.sql" />
-    <Build Include="Security\ReportDevTeam.sql" />
-    <Build Include="Security\ReportDevTeam_1.sql" />
-    <Build Include="Security\Report.sql" />
-    <Build Include="Security\Report_1.sql" />
-    <Build Include="Security\ReportTeam.sql" />
-    <Build Include="Security\ReportTeam_1.sql" />
-    <Build Include="Security\DB_Samriddhi.sql" />
-    <Build Include="Security\DB_Samriddhi_1.sql" />
-    <Build Include="Security\DB_Mayur.sql" />
-    <Build Include="Security\DB_Mayur_1.sql" />
-    <Build Include="Security\AppConfig.sql" />
-    <Build Include="Security\AppConfig_1.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
     <Build Include="Functions\fnGetHistoricalBatchName.sql" />
     <Build Include="Functions\fnCenterList.sql" />
     <Build Include="Functions\fnGetFacultyGPAForReports.sql" />
@@ -1276,7 +1232,6 @@
     <Build Include="Functions\fnGetProductIDFromCourseID.sql" />
     <Build Include="Functions\GetInstallmentDatesInFinancialYear.sql" />
     <Build Include="Stored Procedures\Procs1\aaaaaa_CreateDataLoadScript.sql" />
-    <Build Include="Stored Procedures\Procs1\AC_PROG.sql" />
     <Build Include="Stored Procedures\Procs1\AddMethodologyActivity.sql" />
     <Build Include="Stored Procedures\Procs1\AddMethodologyActivityValue.sql" />
     <Build Include="Stored Procedures\Procs1\AddSubjectAndStructure.sql" />
@@ -1435,7 +1390,6 @@
     <Build Include="Stored Procedures\Procs1\PriorMonthCollectionChequeReport.sql" />
     <Build Include="Stored Procedures\Procs1\ReportUspFacultyUtilizationReportTermWiseAdmin.sql" />
     <Build Include="Stored Procedures\Procs1\RICE_PROG.sql" />
-    <Build Include="Stored Procedures\Procs1\RICE_PROG_New.sql" />
     <Build Include="Stored Procedures\Procs1\Role_Add_Update.sql" />
     <Build Include="Stored Procedures\Procs1\Role_Master_Parameters.sql" />
     <Build Include="Stored Procedures\Procs1\RoleMenuPermissionMapping.sql" />
@@ -1467,7 +1421,6 @@
     <Build Include="Stored Procedures\Procs1\SPGetSessionMasterData_INT.sql" />
     <Build Include="Stored Procedures\Procs1\SPGetSessionModuleMapData_INT.sql" />
     <Build Include="Stored Procedures\Procs1\SPGetSessionTypeMasterData_INT.sql" />
-    <Build Include="Stored Procedures\Procs1\spGetStudentSchoolResultProcess.sql" />
     <Build Include="Stored Procedures\Procs1\SPGetTermCourseMapData_INT.sql" />
     <Build Include="Stored Procedures\Procs1\SPGetTermMasterData_INT.sql" />
     <Build Include="Stored Procedures\Procs1\SPGetTimeSlotMasterData_INT.sql" />
@@ -1629,9 +1582,6 @@
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetInvoicePrintDetails.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetInvoicePrintDetails_BKP_BeforeNewGST.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetInvoiceSummary.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookDetails.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookDetails_BKP_2023.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookDetailsAPI.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookMappedDetails.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookMappedDetails_April_2024.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookMappedDetails_BKP_2024March.sql" />
@@ -1651,7 +1601,6 @@
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetRoutineHeaderData.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetRoutineWiseLogBook.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetRoutineWiseLogBook_BKP_April_2024.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERP_GetRoutineWiseLogBook_BKP_Nov_Before_Remarks.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetRoutineWiseLogBookAPI.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetSaasDetail.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetSchoolGroupTiming.sql" />
@@ -1699,7 +1648,6 @@
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetWeekDayMaster_1.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetWorkingDays.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_insert_Update_Fee_Structure_Component.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERP_insert_Update_Fee_Structure_Component_BKP_BySusmita_Jan2024.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_insert_Update_Student_DocumentMap.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_InsertFeeStructureAcademicSessionMap.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_InsertRoutineStructureHeader.sql" />
@@ -2162,7 +2110,6 @@
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceDataNEW.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceDataNEW_BKPFEB2023.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceDataNEWBKPFEB23_BeforeLeaveStuEliminate.sql" />
-    <Build Include="Stored Procedures\Procs1\uspGetAttendanceDetailReport.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceDistributionReport.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceForInvoice.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendancePercentage.sql" />
@@ -2191,7 +2138,6 @@
     <Build Include="Stored Procedures\Procs1\uspGetBatchTrackReport.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBatchwiseCourseFeedbackDetailAnalysisReport.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBatchwiseHWSubmissionReport.sql" />
-    <Build Include="Stored Procedures\Procs1\uspGetBatchwiseStudentMonthlyExamDetails.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBilling.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBloodGroup.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetBook.sql" />
@@ -3197,9 +3143,6 @@
     <Build Include="Stored Procedures\Procs2\uspGetTaxReceiptTypeCountryAll.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetTeacherDetailsFromInterface.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetTeacherFreeTimeReport.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetTeacherReport.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetTeacherReport_BKP2023Jan.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetTeacherReport_bySoma.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetTeacherSubjects.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetTeacherUtilizationReportNew.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetTemplate.sql" />
@@ -3337,7 +3280,6 @@
     <Build Include="Stored Procedures\Procs3\uspInsertNewHierarchyDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertNewLocation.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertOnAccountFundTransferDetails.sql" />
-    <Build Include="Stored Procedures\Procs3\uspInsertOnAccPaymentDetailsFromAPI.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertOnlinePaymentDetailsFromAPI.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertPlannedRoutineData.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertPreEnquiryDetails.sql" />
@@ -3407,7 +3349,6 @@
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateRoomsDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateStudentOrgEmailAudit.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateStudentStatusCompleted.sql" />
-    <Build Include="Stored Procedures\Procs3\uspInsertUpdateStudentStatusDefaulter.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateSubjectModuleSetup.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateTransportDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateUserWiseRoleMapping.sql" />
@@ -3656,7 +3597,6 @@
     <Build Include="Stored Procedures\Procs3\uspSaveOfflineReceipts.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveOfflineStudentList.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveOfflineStudentListForCenter.sql" />
-    <Build Include="Stored Procedures\Procs3\uspSaveOfflineStudentResult.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveOnlineExam.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveOnlineExamDesign.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveOrder.sql" />
@@ -4036,29 +3976,5 @@
     <Build Include="User Defined Types\UT_User_Group.sql" />
     <Build Include="User Defined Types\UT_LogBookForInsertUpdate.sql" />
     <Build Include="User Defined Types\UT_LogBookTableForInsertUpdate.sql" />
-    <Build Include="Security\Academic.sql" />
-    <Build Include="Security\ACADEMICS.sql" />
-    <Build Include="Security\ASSESSMENT.sql" />
-    <Build Include="Security\AUDIT.sql" />
-    <Build Include="Security\CORPORATE.sql" />
-    <Build Include="Security\CUSTOMERCARE.sql" />
-    <Build Include="Security\DOCUMENT.sql" />
-    <Build Include="Security\ECOMMERCE.sql" />
-    <Build Include="Security\EOS.sql" />
-    <Build Include="Security\ERP.sql" />
-    <Build Include="Security\EXAMINATION.sql" />
-    <Build Include="Security\guardian.sql" />
-    <Build Include="Security\LMS.sql" />
-    <Build Include="Security\LOGISTICS.sql" />
-    <Build Include="Security\MBP.sql" />
-    <Build Include="Security\Migration.sql" />
-    <Build Include="Security\NETWORK.sql" />
-    <Build Include="Security\PLACEMENT.sql" />
-    <Build Include="Security\PSCERTIFICATE.sql" />
-    <Build Include="Security\REPORT_2.sql" />
-    <Build Include="Security\Role.sql" />
-    <Build Include="Security\SelfService.sql" />
-    <Build Include="Security\SMManagement.sql" />
-    <Build Include="Security\STUDENTFEATURES.sql" />
   </ItemGroup>
 </Project>

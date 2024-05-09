@@ -1,4 +1,5 @@
 C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\bin\Debug\SMS_Trial_Dev.dacpac
+C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\SMS_Trial_Dev.sqlproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\Model.xml
 C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\refactor.xml
 C:\Users\Admin\source\repos\TrialSMS_DEV\SMS_Trial_Dev\obj\Debug\postdeploy.sql
