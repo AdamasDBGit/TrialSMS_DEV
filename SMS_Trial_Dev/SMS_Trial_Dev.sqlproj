@@ -1170,7 +1170,6 @@
     <Build Include="Functions\fnCalculateObtainMarks.sql" />
     <Build Include="Functions\ufnGetStudentFinancialDropoutStatus.sql" />
     <Build Include="Functions\fnCalculateExamTypeMarks.sql" />
-    <Build Include="Functions\fnGetFineAmountForAPI_BKP_Before_FineModify_AIS.sql" />
     <Build Include="Functions\ufnGetStudentFinancialDropoutInvoiceWiseStatus.sql" />
     <Build Include="Functions\GenerateInvoiceNumber.sql" />
     <Build Include="Functions\ufnGetStudentDropoutLeaveStatus.sql" />
@@ -1450,7 +1449,6 @@
     <Build Include="Stored Procedures\Procs1\UpdateSubjectStructure.sql" />
     <Build Include="Stored Procedures\Procs1\ups_ERP_GetLogBookMappedDetails.sql" />
     <Build Include="Stored Procedures\Procs1\upsGetStudentBatchDetails.sql" />
-    <Build Include="Stored Procedures\Procs1\upsGetStudentBatchDetails_BeforeClassicRemoval2022_11_30.sql" />
     <Build Include="Stored Procedures\Procs1\upsGetStudentBatchDetailsForOrganizationEmail.sql" />
     <Build Include="Stored Procedures\Procs1\User_Add_Update.sql" />
     <Build Include="Stored Procedures\Procs1\User_Master_parameters.sql" />
@@ -1624,7 +1622,6 @@
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetSubjectTemplete.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetSubjectWiseAttendence.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetSubjectWiseCompleteSubjectStructure.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERP_GetSubjectWiseCompleteSubjectStructure_Before_LogBook_24Nov2023.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetSubjectWiseCompleteSubjectStructureByLeafStructure.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetTeacherAttendanceHome.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetTeacherByToken.sql" />
@@ -1760,12 +1757,9 @@
     <Build Include="Stored Procedures\Procs1\uspApproveGatePassRequest.sql" />
     <Build Include="Stored Procedures\Procs1\uspApproveNotificationTemplate.sql" />
     <Build Include="Stored Procedures\Procs1\uspApproveOrRejectStudentBatch.sql" />
-    <Build Include="Stored Procedures\Procs1\uspApproveOrRejectStudentBatch__BeforeFeePLanModify_March2023.sql" />
     <Build Include="Stored Procedures\Procs1\uspApproveTransCertificate.sql" />
     <Build Include="Stored Procedures\Procs1\uspArchiveSMSList.sql" />
     <Build Include="Stored Procedures\Procs1\uspAssignBatchToCenter.sql" />
-    <Build Include="Stored Procedures\Procs1\uspAssignBatchToCenter_Before_BatchFeePlanLog_2023March.sql" />
-    <Build Include="Stored Procedures\Procs1\uspAssignBatchToCenter_Before_BatchFeePlanLog_2023March2.sql" />
     <Build Include="Stored Procedures\Procs1\uspAssignCourseToCenter.sql" />
     <Build Include="Stored Procedures\Procs1\uspAssignDiscountToLevel.sql" />
     <Build Include="Stored Procedures\Procs1\uspAssignFeePlanToSalesOrgLevels.sql" />
@@ -2055,7 +2049,6 @@
     <Build Include="Stored Procedures\Procs1\uspGetAllRICEDefaulterStudentsListForRICESMART.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAllSchoolAcademicSessionMaster.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAllSchoolGroup.sql" />
-    <Build Include="Stored Procedures\Procs1\uspGetAllSchoolGroup_BeforeBrand.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAllSection.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAllStream.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAllStudentDetailsForBatch.sql" />
@@ -2755,12 +2748,10 @@
     <Build Include="Stored Procedures\Procs2\uspGetPlanCoupons.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPlanDetailsForAdmin.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPlanList.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetPlanList_BeforeExtenededFeb2023.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPlanListForCouponMapping.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPlanListForPublishing.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPlannedVSActualRoutine.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPlanProductDetails.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetPlanProductDetails_BeforeextendedFeb2023.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPlanProductFeePlanDetails.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPMSReport.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetPMSSummaryReport.sql" />
@@ -2976,7 +2967,6 @@
     <Build Include="Stored Procedures\Procs2\uspGetStudentFeedbackReport_New.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetStudentFeedbackReport_Old.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetStudentForBatch.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetStudentForBatch_Backup_2023_03_29_BeforeTempFix.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetStudentForDemotionForParticularBatch .sql" />
     <Build Include="Stored Procedures\Procs2\uspGetStudentForMultipleBatch .sql" />
     <Build Include="Stored Procedures\Procs2\uspGetStudentForParticularBatch .sql" />
@@ -3184,7 +3174,6 @@
     <Build Include="Stored Procedures\Procs3\uspInsertApprovedScannedStudentsDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertAttendanceDataForEntireDay.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertBatchDetailsForInterface.sql" />
-    <Build Include="Stored Procedures\Procs3\uspInsertBatchDetailsForInterface_BeforeClassicRemoval2022_11_30.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertBatchDetailsForInterface_RestoreClassic2024.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertBatchInstallment.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertBatchTimeSlotDetails.sql" />
@@ -3249,8 +3238,6 @@
     <Build Include="Stored Procedures\Procs3\uspInsertStudentActivityPerformance.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertStudentBatchDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertStudentBatchDetailsForInterface.sql" />
-    <Build Include="Stored Procedures\Procs3\uspInsertStudentBatchDetailsForInterface_BeforeRemoveClassic2022_11_30.sql" />
-    <Build Include="Stored Procedures\Procs3\uspInsertStudentBatchDetailsForInterface_BeforeRestoringClassic2024.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertStudentBatchDetailsForInterfaceMigration.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertStudentDataInInterfaceForDiscontinuation.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertStudentDetails.sql" />
@@ -3282,7 +3269,6 @@
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateGradeDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateGuardDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateNotificationSchedule.sql" />
-    <Build Include="Stored Procedures\Procs3\uspInsertUpdateNotificationSchedule_BeforeAddschoolGroup.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateRoomsDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateStudentOrgEmailAudit.sql" />
     <Build Include="Stored Procedures\Procs3\uspInsertUpdateStudentStatusCompleted.sql" />
@@ -3473,7 +3459,6 @@
     <Build Include="Stored Procedures\Procs3\uspRevokeDiscountFromLevel.sql" />
     <Build Include="Stored Procedures\Procs3\uspRevokeFeePlanFromCenter.sql" />
     <Build Include="Stored Procedures\Procs3\uspRevokeStudentBatch.sql" />
-    <Build Include="Stored Procedures\Procs3\uspRevokeStudentBatch_BeforeFeePlanModify_March2023.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveAssessmentExam.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveAssessmentWorkflow.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveBankPoolMapping.sql" />
@@ -3549,7 +3534,6 @@
     <Build Include="Stored Procedures\Procs3\uspSaveSMSDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveStepFormula.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveStudentAttendance.sql" />
-    <Build Include="Stored Procedures\Procs3\uspSaveStudentAttendance_Before_AttendenceRestrict_DEC2023.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveStudentDispatchDetail.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveStudentExamCompetencyWise.sql" />
     <Build Include="Stored Procedures\Procs3\uspSaveStudentExamResult.sql" />
@@ -3758,7 +3742,6 @@
     <Build Include="Stored Procedures\Procs3\uspUpdateStudentAttendance.sql" />
     <Build Include="Stored Procedures\Procs3\uspUpdateStudentAttendanceSolus.sql" />
     <Build Include="Stored Procedures\Procs3\uspUpdateStudentBatch.sql" />
-    <Build Include="Stored Procedures\Procs3\uspUpdateStudentBatch_Before_BatchFeePlanLog_2023March.sql" />
     <Build Include="Stored Procedures\Procs3\uspUpdateStudentCenterDetails.sql" />
     <Build Include="Stored Procedures\Procs3\uspUpdateStudentCertificateEligibility.sql" />
     <Build Include="Stored Procedures\Procs3\uspUpdateStudentCertificateRequest.sql" />
