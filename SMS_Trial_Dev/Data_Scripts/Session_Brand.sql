@@ -9,8 +9,7 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-USE [SMS]
-GO
+
 INSERT [dbo].[T_Brand_Master] ([I_Brand_ID], [S_Brand_Code], [S_Brand_Name], [S_Crtd_By], [S_Upd_By], [Dt_Crtd_On], [Dt_Upd_On], [I_Status], [S_Short_Code], [S_CIN], [S_PAN]) VALUES (106, N'SystemAdmin', N'System Administrator', N'sa', NULL, CAST(N'2010-07-27T18:48:47.300' AS DateTime), NULL, 1, N'SA', NULL, NULL)
 INSERT [dbo].[T_Brand_Master] ([I_Brand_ID], [S_Brand_Code], [S_Brand_Name], [S_Crtd_By], [S_Upd_By], [Dt_Crtd_On], [Dt_Upd_On], [I_Status], [S_Short_Code], [S_CIN], [S_PAN]) VALUES (107, N'AIS', N'Adamas International School', N'sa', NULL, CAST(N'2012-08-24T12:20:09.520' AS DateTime), NULL, 1, N'AS', NULL, NULL)
 INSERT [dbo].[T_Brand_Master] ([I_Brand_ID], [S_Brand_Code], [S_Brand_Name], [S_Crtd_By], [S_Upd_By], [Dt_Crtd_On], [Dt_Upd_On], [I_Status], [S_Short_Code], [S_CIN], [S_PAN]) VALUES (108, N'AIT', N'Adamas Institute Of Technology', N'sa', NULL, CAST(N'2012-08-24T17:30:58.753' AS DateTime), NULL, 1, N'AT', NULL, NULL)
