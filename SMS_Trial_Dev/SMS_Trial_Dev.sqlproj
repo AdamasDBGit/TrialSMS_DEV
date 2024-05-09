@@ -3371,8 +3371,6 @@
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentAgencyPaymentData.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentAgencyPaymentDataReversal.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentAgencyPaymentDataReversal_AIS.sql" />
-    <Build Include="Stored Procedures\Procs3\uspPrepareStudentAttendanceData.sql" />
-    <Build Include="Stored Procedures\Procs3\uspPrepareStudentAttendanceDataSealdah.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentCollectionCashData.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentCollectionCashReversalData.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentCollectionData.sql" />
