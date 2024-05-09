@@ -1154,7 +1154,6 @@
     <Build Include="Functions\fnGetTotalSessionCountSubjectWise.sql" />
     <Build Include="Functions\fnGetTotalSessionCountTeacherWise.sql" />
     <Build Include="Functions\fnGetTotalStudentCount.sql" />
-    <Build Include="Functions\fnGetAcademicDropOutStatus.sql" />
     <Build Include="Functions\fnGetReceiptTaxAmtfromXML.sql" />
     <Build Include="Functions\fnGetReceiptAmtfromXML.sql" />
     <Build Include="Functions\fnGetStudentInternalAttendanceDetails.sql" />
