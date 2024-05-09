@@ -2072,7 +2072,6 @@
     <Build Include="Stored Procedures\Procs1\uspGetAssessmentTestList.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAssessorListforEmployee.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceData.sql" />
-    <Build Include="Stored Procedures\Procs1\uspGetAttendanceDataFromSolus.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceDataNEW.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceDistributionReport.sql" />
     <Build Include="Stored Procedures\Procs1\uspGetAttendanceForInvoice.sql" />
@@ -2562,8 +2561,6 @@
     <Build Include="Stored Procedures\Procs2\uspGetHOScheduleFromBatchID.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetHostelVacancy.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetHouse.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetIDCardData.sql" />
-    <Build Include="Stored Procedures\Procs2\uspGetIDCardData_1.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetIDTConversionDetails.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetIDTConversionDetails_1.sql" />
     <Build Include="Stored Procedures\Procs2\uspGetIDTConversionReport.sql" />
