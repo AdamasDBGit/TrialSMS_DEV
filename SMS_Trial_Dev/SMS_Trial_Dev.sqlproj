@@ -3378,7 +3378,6 @@
     <Build Include="Stored Procedures\Procs3\uspNotificationForNetwork.sql" />
     <Build Include="Stored Procedures\Procs3\uspNotifiyCTCompletionToDCCH.sql" />
     <Build Include="Stored Procedures\Procs3\uspNullifyExistingDues.sql" />
-    <Build Include="Stored Procedures\Procs3\uspOracleSMSRecon.sql" />
     <Build Include="Stored Procedures\Procs3\uspOwnCenterUpdate.sql" />
     <Build Include="Stored Procedures\Procs3\uspParentTokenValidate.sql" />
     <Build Include="Stored Procedures\Procs3\uspPerformanceReport.sql" />
@@ -3420,7 +3419,6 @@
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentFeeAccrualDataWithoutDiscount.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentFeeCancellationData.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentFeeCancellationDataWithoutDiscount.sql" />
-    <Build Include="Stored Procedures\Procs3\uspPrepareStudentFinancialData.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareStudentSecurityDepositRefundData.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareTransportData.sql" />
     <Build Include="Stored Procedures\Procs3\uspPrepareTransportDataTemp.sql" />
