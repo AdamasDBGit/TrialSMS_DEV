@@ -158,7 +158,6 @@
     <Build Include="Tables\T_Student_Attendance.sql" />
     <Build Include="Tables\T_Receipt_Type_Tax.sql" />
     <Build Include="Tables\T_Schedule_Topic.sql" />
-    <Build Include="Tables\T_Student_Class_Section_Bak05042024.sql" />
     <Build Include="Tables\Tbl_KPMG_Projection.sql" />
     <Build Include="Tables\T_Education_CurrentStatus.sql" />
     <Build Include="Tables\T_Stream.sql" />
@@ -189,7 +188,6 @@
     <Build Include="Tables\T_Complaint_Audit_Trail.sql" />
     <Build Include="Tables\T_Subject_Master.sql" />
     <Build Include="Tables\T_Enquiry_PostCounselling_Feedback_Details.sql" />
-    <Build Include="Tables\T_Receipt_Header_Archive_Bak.sql" />
     <Build Include="Tables\Tbl_KPMG_PoDetailItems_KP.sql" />
     <Build Include="Tables\T_Eligibility_List.sql" />
     <Build Include="Tables\ManualMoveOrder_Temp.sql" />
@@ -205,7 +203,6 @@
     <Build Include="Tables\T_Education_Stream.sql" />
     <Build Include="Tables\T_Student_PS_Certificate.sql" />
     <Build Include="Tables\T_Result_Exam_Schedule_Mig.sql" />
-    <Build Include="Tables\T_Receipt_Component_Detail_Archive_Bak.sql" />
     <Build Include="Tables\T_Time_Validation_Master.sql" />
     <Build Include="Tables\Tbl_KPMG_PoDetails_KP.sql" />
     <Build Include="Tables\T_Employee_Skill_Map.sql" />
@@ -218,7 +215,6 @@
     <Build Include="Tables\Tbl_KPMG_DuplicateMaterialIssue.sql" />
     <Build Include="Tables\T_Student_Transfer_Request.sql" />
     <Build Include="Tables\T_Result_Rule_Dtl_Mig.sql" />
-    <Build Include="Tables\T_Receipt_Tax_Detail_Archive_Bak.sql" />
     <Build Include="Tables\Tbl_KPMG_StockMaster_KP.sql" />
     <Build Include="Tables\T_Product_ExamCategory_Map.sql" />
     <Build Include="Tables\T_Query_Posting.sql" />
@@ -269,7 +265,6 @@
     <Build Include="Tables\T_NewTable_Akash.sql" />
     <Build Include="Tables\T_Aim.sql" />
     <Build Include="Tables\T_Answer_Paper.sql" />
-    <Build Include="Tables\T_Result_Exam_Schedule_Bak_221220223.sql" />
     <Build Include="Tables\T_ERP_Routine_Structure_Header.sql" />
     <Build Include="Tables\T_BusRoute_Master.sql" />
     <Build Include="Tables\T_Import_Course_Structure.sql" />
@@ -278,19 +273,16 @@
     <Build Include="Tables\T_Audit_Type.sql" />
     <Build Include="Tables\T_Audit_Schedule_Details.sql" />
     <Build Include="Tables\Tbl_KPMG_TransitDetails.sql" />
-    <Build Include="Tables\T_Result_Subject_Group_Rule_Bak_221220223.sql" />
     <Build Include="Tables\T_Gate_Pass_Scanned_Details.sql" />
     <Build Include="Tables\T_Currency_Master.sql" />
     <Build Include="Tables\T_Center_Hierarchy_Details.sql" />
     <Build Include="Tables\T_Marital_Status.sql" />
     <Build Include="Tables\T_ERP_Fee_Component.sql" />
     <Build Include="Tables\T_Counseling_Focus.sql" />
-    <Build Include="Tables\T_Result_Subject_Rule_Bak_221220223.sql" />
     <Build Include="Tables\T_Native_Language.sql" />
     <Build Include="Tables\Tbl_KPMG_MoAvailableItems.sql" />
     <Build Include="Tables\T_Student_Leave_Request.sql" />
     <Build Include="Tables\Temp2.sql" />
-    <Build Include="Tables\T_Student_Result_Bak_221220223.sql" />
     <Build Include="Tables\T_Discount_Brand_Map.sql" />
     <Build Include="Tables\T_ERP_Online_Payment_Details.sql" />
     <Build Include="Tables\T_Blood_Group.sql" />
@@ -299,7 +291,6 @@
     <Build Include="Tables\T_Invoice_Child_Detail.sql" />
     <Build Include="Tables\T_AttendanceDataAllEntities.sql" />
     <Build Include="Tables\Temp_now.sql" />
-    <Build Include="Tables\T_Student_Result_Detail_Bak_221220223.sql" />
     <Build Include="Tables\T_ERP_API_Socket.sql" />
     <Build Include="Tables\bkup_student_Attendance_Delete_8June2013.sql" />
     <Build Include="Tables\T_Logistics_Payment.sql" />
@@ -308,7 +299,6 @@
     <Build Include="Tables\T_Certificate_Query.sql" />
     <Build Include="Tables\Tbl_KPMG_MoAvailableItemDetails.sql" />
     <Build Include="Tables\T_Student_Marks.sql" />
-    <Build Include="Tables\T_Student_Result_Detail_Breakup_Bak_221220223.sql" />
     <Build Include="Tables\T_Request_Logs.sql" />
     <Build Include="Tables\T_Batch_Master.sql" />
     <Build Include="Tables\T_ERP_User_Nationality.sql" />
@@ -317,12 +307,10 @@
     <Build Include="Tables\T_Student_Result.sql" />
     <Build Include="Tables\T_ERP_User_Type.sql" />
     <Build Include="Tables\T_User_Type_Master.sql" />
-    <Build Include="Tables\T_Result_Subject_Module_Bak_221220223.sql" />
     <Build Include="Tables\T_Feedback_Group.sql" />
     <Build Include="Tables\T_Schedule_Chapter.sql" />
     <Build Include="Tables\Tbl_KPMG_SM_List.sql" />
     <Build Include="Tables\T_Student_Center_Detail.sql" />
-    <Build Include="Tables\T_Result_Rule_Dtl_Bak_221220223.sql" />
     <Build Include="Tables\T_Transaction_Product_Subscription_Details.sql" />
     <Build Include="Tables\T_SubQuestion_Choice.sql" />
     <Build Include="Tables\T_Batch_Log.sql" />
@@ -474,7 +462,6 @@
     <Build Include="Tables\T_User_Nationality.sql" />
     <Build Include="Tables\T_ERP_Enquiry_Regn_Address.sql" />
     <Build Include="Tables\T_ItemType_Master.sql" />
-    <Build Include="Tables\Tbl_KPMG_StockMaster_MigrationBackup.sql" />
     <Build Include="Tables\T_Grading_Pattern_Master.sql" />
     <Build Include="Tables\Student_Info_Mig.sql" />
     <Build Include="Tables\T_ERP_Student_Class_Routine.sql" />
@@ -485,7 +472,6 @@
     <Build Include="Tables\T_Logistics_Charge_Discount_Co.sql" />
     <Build Include="Tables\Tbl_KPMG_StockDetails.sql" />
     <Build Include="Tables\T_Plan_Brand_Map.sql" />
-    <Build Include="Tables\Tbl_KPMG_StockDetails_MigrationBackup.sql" />
     <Build Include="Tables\T_Student_Paper_Marks.sql" />
     <Build Include="Tables\T_ERP_Attendance_Entry_Header.sql" />
     <Build Include="Tables\T_ERP_Faculty_Subject.sql" />
@@ -914,7 +900,6 @@
     <Build Include="Tables\T_Tax_Country_ReceiptType.sql" />
     <Build Include="Tables\T_Rule_Master.sql" />
     <Build Include="Tables\T_E_Project_Spec.sql" />
-    <Build Include="Tables\T_Center_Batch_Details_bak22022024.sql" />
     <Build Include="Tables\T_Invoice_Detail_Tax.sql" />
     <Build Include="Tables\T.sql" />
     <Build Include="Tables\T_Enquiry_External_Additional_Details.sql" />
@@ -950,7 +935,6 @@
     <Build Include="Tables\T_Device_Master.sql" />
     <Build Include="Tables\T_Center_Payment_Details.sql" />
     <Build Include="Tables\T_ERP_Result_Conduct_Master.sql" />
-    <Build Include="Tables\T_FollowUPStageSequence.sql" />
     <Build Include="Tables\zzEvent_Template.sql" />
     <Build Include="Tables\T_ERP_User_Group_Master.sql" />
     <Build Include="Tables\tblMigStock_10Aug2015.sql" />
@@ -1544,7 +1528,6 @@
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetInvoicePrintDetails.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetInvoiceSummary.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookMappedDetails.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERP_GetLogBookMappedDetails_April_2024.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetNextInstalmentDateForReceipt.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetPaymentInstallmentFrequencyTypeDetails.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_GetPendingLessionPlansForMonthAPI.sql" />
@@ -1652,9 +1635,7 @@
     <Build Include="Stored Procedures\Procs1\usp_ERP_ValidateGlobalToken.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_VerifyBulkEvents.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERP_VerifyDocumentForStudent.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERPGetAdmissi__onList_oldSMS_Backup29Jan2024.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERPGetAdmissionList_oldSMS.sql" />
-    <Build Include="Stored Procedures\Procs1\usp_ERPGetAdmissionList_oldSMS_Backup29Jan2024.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERPGetAdmissionList_oldSMS_POC.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERPGetDueReport_History.sql" />
     <Build Include="Stored Procedures\Procs1\usp_ERPUpdateEnquiryOnAdmission.sql" />
@@ -3814,7 +3795,6 @@
     <Build Include="User Defined Types\UT_SubjectStructurePlanDetailsForInsertUpdate.sql" />
     <Build Include="User Defined Types\UT_Drop.sql" />
     <Build Include="User Defined Types\UT_Delete.sql" />
-    <Build Include="User Defined Types\BKP.sql" />
     <Build Include="User Defined Types\UT_FeeStructure_Component_Details.sql" />
     <Build Include="User Defined Types\UT_Student_Document_Map.sql" />
     <Build Include="User Defined Types\UT_Student_Fee_Add.sql" />
@@ -3860,7 +3840,6 @@
     <Build Include="Schema\SMManagement.sql" />
     <Build Include="Schema\STUDENTFEATURES.sql" />
     <Build Include="Schema\Role.sql" />
-    <Build Include="Stored Procedures\Procedure1.sql" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">

@@ -9,6 +9,6 @@ BEGIN
     
     -- Insert statements for procedure here    
  select TSG.I_School_Group_ID as SchoolGroupID, TSG.I_Brand_Id as BrandId, TSG.S_School_Group_Name as SchoolGroupName   
- from [SMS].[dbo].[T_School_Group]as TSG where I_Brand_Id=@brandid    
+ from [dbo].[T_School_Group]as TSG where I_Brand_Id=@brandid    
  and I_Status=1  
 END

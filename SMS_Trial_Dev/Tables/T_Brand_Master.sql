@@ -10,6 +10,9 @@
     [S_Short_Code] VARCHAR (32)  NULL,
     [S_CIN]        VARCHAR (MAX) NULL,
     [S_PAN]        VARCHAR (MAX) NULL,
+    [S_location]   VARCHAR (50)  NULL,
     CONSTRAINT [PK__T_Brand_Master__6B25B5D9] PRIMARY KEY CLUSTERED ([I_Brand_ID] ASC)
 );
+
+
 

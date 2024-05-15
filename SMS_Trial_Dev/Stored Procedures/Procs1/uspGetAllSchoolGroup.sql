@@ -11,7 +11,7 @@ SELECT  [I_School_Group_ID] GroupID
       ,[S_School_Group_Name] SchoolGroupName
       ,[I_Status]
     
-  FROM [SMS].[dbo].[T_School_Group]
+  FROM [dbo].[T_School_Group]
   where I_Brand_Id = ISNULL(@iBrandId,I_Brand_Id) and I_Status=1
 
 --where SD.S_Guardian_Mobile_No =ISNULL(@sMobile,SD.S_Guardian_Mobile_No)  AND [I_Gate_Pass_Request_ID] = ISNULL(@iGatePassRequestID,[I_Gate_Pass_Request_ID])

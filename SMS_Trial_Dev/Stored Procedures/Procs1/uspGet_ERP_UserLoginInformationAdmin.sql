@@ -1,9 +1,8 @@
 ﻿
-Create PROCEDURE [dbo].[uspGet_ERP_UserLoginInformationAdmin]      
+CREATE PROCEDURE [dbo].[uspGet_ERP_UserLoginInformationAdmin]      
     (      
       @vLoginID VARCHAR(200) ,      
-      @vPassword NVARCHAR(200) 
-	   ---0 for User 1 for faculty
+      @vPassword NVARCHAR(200)      
     )      
 AS      
     BEGIN      
@@ -38,9 +37,7 @@ AS
       ,BM.I_Brand_ID as BrandID      
       ,BM.S_Brand_Name as BrandName,      
       ISNULL(UM.IsAllAllowedEligible,'false') as IsAllAllowedEligible,      
-      BM.S_Brand_Code as BrandCode
-	  ,Isnull(UM.Is_Teaching_Staff,0) as D_UserType,
-	  EUP.S_Photo as UserPhoto
+      BM.S_Brand_Code as BrandCode      
                 FROM    dbo.T_ERP_User as UM      
       inner join      
       dbo.T_ERP_User_Brand as UB on UB.I_User_ID=UM.I_User_ID      
@@ -49,9 +46,7 @@ AS
       --Inner Join T_ERP_Role_Master b on a.Role_Id=b.I_Role_ID      
       --Inner Join T_erp_Permission c on c.I_Permission_ID=a.Permission_ID      
       --Inner Join T_ERP_User_Group_Master d on d.I_User_Group_Master_ID=a.User_Group_ID      
-      Inner join T_Brand_Master as BM on BM.I_Brand_ID=UB.I_Brand_ID  
-	  left join
-	  T_User_Profile as EUP on UM.I_User_ID=EUP.I_User_ID and EUP.I_Status=1
+      Inner join T_Brand_Master as BM on BM.I_Brand_ID=UB.I_Brand_ID       
                 WHERE   UM.S_Username = @vLoginID      
                         AND UM.S_Password = @vPassword      
       --AND a.Is_Active=1      

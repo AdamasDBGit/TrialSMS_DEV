@@ -1,1 +1,4 @@
 ﻿CREATE SCHEMA [LMS]
+    AUTHORIZATION [dbo];
+
+

@@ -1,1 +1,4 @@
 ﻿CREATE SCHEMA [ECOMMERCE]
+    AUTHORIZATION [dbo];
+
+

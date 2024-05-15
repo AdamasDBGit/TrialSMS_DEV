@@ -3,7 +3,7 @@
 -- Create date: <14th Sept 2023>  
 -- Description: <to add or update the class>  
 -- =============================================  
-CREATE PROCEDURE dbo.usp_ERP_AddClass   
+CREATE PROCEDURE [dbo].[usp_ERP_AddClass]   
  -- Add the parameters for the stored procedure here  
  @iClassID int = null,  
  @sClassCode varchar(20) ,  
@@ -32,7 +32,7 @@ BEGIN
  END  
  ELSE  
  BEGIN  
- update [SMS].[dbo].[T_Class]   
+ update [dbo].[T_Class]   
  set   
  [S_Class_Code]     = @sClassCode,  
  [S_Class_Name]     = @sClassName,  
@@ -57,7 +57,7 @@ BEGIN
  END  
  ELSE  
  BEGIN  
- INSERT INTO [SMS].[dbo].[T_Class]  
+ INSERT INTO [dbo].[T_Class]  
 (  
 [S_Class_Code],  
 [S_Class_Name],  

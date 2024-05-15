@@ -13,7 +13,7 @@ SELECT
 S_Class_Name CourseName
 ,I_Class_ID ID
 FROM T_Class
-where  I_Status = 1
+where  I_Status = 1 and I_Brand_ID=@iBrandID
 	
 END TRY
 

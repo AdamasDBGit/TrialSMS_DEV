@@ -15,8 +15,9 @@ BEGIN
 		TC.S_Class_Code as ClassCode,
 		TC.S_Class_Name as ClassName,
 		TC.I_Status as ClassStatus
-		from [SMS].[dbo].[T_Class] as TC
-		where TC.I_Class_ID= ISNULL(@iClassID,TC.I_Class_ID) and I_Brand_ID = @iBrandID
+		from [dbo].[T_Class] as TC
+		where TC.I_Class_ID= ISNULL(@iClassID,TC.I_Class_ID)
+		and I_Brand_ID = @iBrandID
 		ORDER BY 
     TC.I_Class_ID ASC;
 	END

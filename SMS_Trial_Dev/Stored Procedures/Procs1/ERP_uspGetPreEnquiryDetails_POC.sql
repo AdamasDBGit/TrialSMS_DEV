@@ -51,7 +51,12 @@ End
   if @BrandID=110      
   Begin      
   SET @iCenterID=36      
-  End   
+  End  
+  ELSE
+  BEGIN
+   set @iCenterID = (select top 1 I_Centre_Id from T_Brand_Center_Details  where I_Brand_ID=@BrandID)
+  END
+ 
    
             
  create table #TempTopFollowUpDate         
