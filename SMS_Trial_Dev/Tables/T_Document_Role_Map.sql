@@ -6,3 +6,9 @@
     CONSTRAINT [FK_T_Document_Role_Map_T_User_Documents] FOREIGN KEY ([I_DocumentID]) REFERENCES [DOCUMENT].[T_User_Documents] ([I_Document_ID])
 );
 
+
+GO
+ALTER TABLE [DOCUMENT].[T_Document_Role_Map] NOCHECK CONSTRAINT [FK_T_Document_Role_Map_T_Role_Master];
+
+
+

@@ -12,3 +12,9 @@
     CONSTRAINT [FK_T_Batch_Room_Map_T_Room_Master] FOREIGN KEY ([I_Room_ID]) REFERENCES [dbo].[T_Room_Master] ([I_Room_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Batch_Room_Map] NOCHECK CONSTRAINT [FK_T_Batch_Room_Map_T_Batch_Master];
+
+
+

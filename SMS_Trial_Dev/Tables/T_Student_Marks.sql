@@ -19,6 +19,12 @@
 
 
 GO
+ALTER TABLE [EXAMINATION].[T_Student_Marks] NOCHECK CONSTRAINT [FK_T_Student_Marks_T_Batch_Exam_Map];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [index_Student_ID_Student_Marks]
     ON [EXAMINATION].[T_Student_Marks]([I_Student_Detail_ID] ASC);
 

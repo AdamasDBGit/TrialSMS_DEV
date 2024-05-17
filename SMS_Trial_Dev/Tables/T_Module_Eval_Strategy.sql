@@ -19,6 +19,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Module_Eval_Strategy] NOCHECK CONSTRAINT [FK__T_Module___I_Cou__6E4219A6];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [index_Component_ID_Module_Eval_Strategy]
     ON [dbo].[T_Module_Eval_Strategy]([I_Exam_Component_ID] ASC);
 

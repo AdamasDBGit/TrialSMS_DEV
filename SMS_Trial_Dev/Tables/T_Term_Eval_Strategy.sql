@@ -23,3 +23,25 @@
     CONSTRAINT [FK_T_Term_Eval_Strategy_T_Template_Master] FOREIGN KEY ([I_Template_ID]) REFERENCES [dbo].[T_Template_Master] ([I_Template_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Term_Eval_Strategy] NOCHECK CONSTRAINT [FK__T_Term_Ev__I_Cou__6A7188C2];
+
+
+GO
+ALTER TABLE [dbo].[T_Term_Eval_Strategy] NOCHECK CONSTRAINT [FK__T_Term_Ev__I_Exa__787EE5A0];
+
+
+GO
+ALTER TABLE [dbo].[T_Term_Eval_Strategy] NOCHECK CONSTRAINT [FK__T_Term_Ev__I_Ter__697D6489];
+
+
+GO
+ALTER TABLE [dbo].[T_Term_Eval_Strategy] NOCHECK CONSTRAINT [FK_T_Term_Eval_Strategy_T_Exam_Type_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Term_Eval_Strategy] NOCHECK CONSTRAINT [FK_T_Term_Eval_Strategy_T_Template_Master];
+
+
+

@@ -1,4 +1,4 @@
-﻿--exec uspGetCalenderHolidayList 107,4
+﻿--exec uspGetCalenderHolidayList 1,1
 CREATE PROCEDURE [dbo].[uspGetCalenderHolidayList]
 (
 	@iBrandID int = null,

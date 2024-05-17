@@ -14,3 +14,9 @@
     CONSTRAINT [FK__T_Brand_C__I_Cen__09A971A2] FOREIGN KEY ([I_Centre_Id]) REFERENCES [dbo].[T_Centre_Master] ([I_Centre_Id])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Brand_Center_Details] NOCHECK CONSTRAINT [FK__T_Brand_C__I_Bra__08D61451];
+
+
+

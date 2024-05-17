@@ -5,3 +5,9 @@
     CONSTRAINT [FK_T_Batch_Exam_Faculty_Map_T_Batch_Exam_Faculty_Map] FOREIGN KEY ([I_Employee_ID]) REFERENCES [dbo].[T_Employee_Dtls] ([I_Employee_ID])
 );
 
+
+GO
+ALTER TABLE [EXAMINATION].[T_Batch_Exam_Faculty_Map] NOCHECK CONSTRAINT [FK_T_Batch_Exam_Faculty_Map_T_Batch_Exam_Faculty_Map];
+
+
+

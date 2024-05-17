@@ -22,3 +22,9 @@
     CONSTRAINT [FK_T_Exam_Component_Master_T_Exam_Type_Master1234] FOREIGN KEY ([I_Exam_Type_Master_ID]) REFERENCES [dbo].[T_Exam_Type_Master] ([I_Exam_Type_Master_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Exam_Component_Master] NOCHECK CONSTRAINT [FK_T_Exam_Component_Master_T_Course_Master];
+
+
+

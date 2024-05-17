@@ -7,3 +7,9 @@
     CONSTRAINT [FK_T_Student_Extra_View_T_Student_Detail] FOREIGN KEY ([I_Student_Detail_ID]) REFERENCES [dbo].[T_Student_Detail] ([I_Student_Detail_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Student_Extra_View] NOCHECK CONSTRAINT [FK_T_Student_Extra_View_T_Student_Batch_Master];
+
+
+

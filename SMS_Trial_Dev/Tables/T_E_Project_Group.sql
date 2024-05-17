@@ -31,3 +31,9 @@
     CONSTRAINT [FK_T_E_Project_Group_T_Upload_Document1] FOREIGN KEY ([I_Report_File_ID]) REFERENCES [dbo].[T_Upload_Document] ([I_Document_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_E_Project_Group] NOCHECK CONSTRAINT [FK__T_E_Proje__I_Cou__4DAA618B];
+
+
+

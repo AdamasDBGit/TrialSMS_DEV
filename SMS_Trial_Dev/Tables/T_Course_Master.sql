@@ -38,6 +38,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Course_Master] NOCHECK CONSTRAINT [FK__T_Course___I_Bra__7C9038FD];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [NCI_S_Course_Name]
     ON [dbo].[T_Course_Master]([S_Course_Name] ASC);
 

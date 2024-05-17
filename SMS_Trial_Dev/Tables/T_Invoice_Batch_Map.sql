@@ -11,3 +11,9 @@
     CONSTRAINT [FK_T_Invoice_Batch_Map_T_Student_Batch_Master] FOREIGN KEY ([I_Batch_ID]) REFERENCES [dbo].[T_Student_Batch_Master] ([I_Batch_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Invoice_Batch_Map] NOCHECK CONSTRAINT [FK_T_Invoice_Batch_Map_T_Student_Batch_Master];
+
+
+

@@ -18,3 +18,9 @@
     CONSTRAINT [FK_T_Student_PS_Certificate_T_Term_Master] FOREIGN KEY ([I_Term_ID]) REFERENCES [dbo].[T_Term_Master] ([I_Term_ID])
 );
 
+
+GO
+ALTER TABLE [PSCERTIFICATE].[T_Student_PS_Certificate] NOCHECK CONSTRAINT [FK_T_Student_PS_Certificate_T_Course_Master];
+
+
+

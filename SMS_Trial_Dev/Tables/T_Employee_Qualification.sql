@@ -19,3 +19,13 @@
     CONSTRAINT [FK__T_Employe__I_Qua__2BB53C3A] FOREIGN KEY ([I_Qualification_Name_ID]) REFERENCES [dbo].[T_Qualification_Name_Master] ([I_Qualification_Name_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Employee_Qualification] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__12AA62A5];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Qualification] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__4EBF4CAC];
+
+
+

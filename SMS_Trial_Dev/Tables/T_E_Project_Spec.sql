@@ -19,3 +19,9 @@
     CONSTRAINT [FK_E_Project_Spec_E_Project_Spec] FOREIGN KEY ([I_E_Project_Spec_ID]) REFERENCES [ACADEMICS].[T_E_Project_Spec] ([I_E_Project_Spec_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_E_Project_Spec] NOCHECK CONSTRAINT [FK__E_Project__I_Cou__4238AEDF];
+
+
+

@@ -11,6 +11,16 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Student_Attendance] NOCHECK CONSTRAINT [FK__T_Student__I_Stu__39E36000];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Attendance] NOCHECK CONSTRAINT [FK_T_Student_Attendance_T_TimeTable_Master];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [index_Student_ID_Attendance]
     ON [dbo].[T_Student_Attendance]([I_Student_Detail_ID] ASC);
 

@@ -14,3 +14,9 @@
     CONSTRAINT [FK_T_Company_Tax_Master_T_Country_Master] FOREIGN KEY ([I_Country_ID]) REFERENCES [dbo].[T_Country_Master] ([I_Country_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Company_Tax_Master] NOCHECK CONSTRAINT [FK_T_Company_Tax_Master_T_Brand_Master];
+
+
+

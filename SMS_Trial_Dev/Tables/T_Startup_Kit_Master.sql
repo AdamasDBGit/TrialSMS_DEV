@@ -14,3 +14,9 @@
     CONSTRAINT [FK__T_Startup__I_Bra__0FADFA69] FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID])
 );
 
+
+GO
+ALTER TABLE [NETWORK].[T_Startup_Kit_Master] NOCHECK CONSTRAINT [FK__T_Startup__I_Bra__0FADFA69];
+
+
+

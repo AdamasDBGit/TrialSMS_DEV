@@ -19,3 +19,9 @@
     CONSTRAINT [FK_T_Skill_Exam_Map_T_EOS_Skill_Master] FOREIGN KEY ([I_Skill_ID]) REFERENCES [dbo].[T_EOS_Skill_Master] ([I_Skill_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Skill_Exam_Map] NOCHECK CONSTRAINT [FK_T_Skill_Exam_Map_T_EOS_Skill_Master];
+
+
+

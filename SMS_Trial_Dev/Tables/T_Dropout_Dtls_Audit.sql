@@ -18,3 +18,21 @@
     CONSTRAINT [FK__T_Dropout__I_Stu__542254F0] FOREIGN KEY ([I_Student_ID]) REFERENCES [dbo].[T_Student_Detail] ([I_Student_Detail_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Dtls_Audit] NOCHECK CONSTRAINT [FK__T_Dropout__I_Cen__2C146396];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Dtls_Audit] NOCHECK CONSTRAINT [FK__T_Dropout__I_Dro__3AA27A0F];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Dtls_Audit] NOCHECK CONSTRAINT [FK__T_Dropout__I_Dro__5C8A822D];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Dtls_Audit] NOCHECK CONSTRAINT [FK__T_Dropout__I_Stu__542254F0];
+
+
+

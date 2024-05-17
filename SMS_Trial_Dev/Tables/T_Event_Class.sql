@@ -4,6 +4,9 @@
     [I_School_Group_ID] INT      NULL,
     [I_Class_ID]        INT      NULL,
     [Is_Active]         BIT      NULL,
-    [dt_Modified_dt]    DATETIME NULL
+    [dt_Modified_dt]    DATETIME NULL,
+    [dt_create_dt]      DATETIME DEFAULT (getdate()) NULL
 );
+
+
 

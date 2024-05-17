@@ -16,3 +16,21 @@
     CONSTRAINT [FK__T_Employe__I_Rol__519BB957] FOREIGN KEY ([I_Role_ID]) REFERENCES [dbo].[T_Role_Master] ([I_Role_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Employee_Role_Map] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__139E86DE];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Role_Map] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__4FB370E5];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Role_Map] NOCHECK CONSTRAINT [FK__T_Employe__I_Rol__1586CF50];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Role_Map] NOCHECK CONSTRAINT [FK__T_Employe__I_Rol__519BB957];
+
+
+

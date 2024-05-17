@@ -103,6 +103,6 @@ GROUP BY URPM.I_User_Id
 	and 
 	(ISNULL(EU.Is_Teaching_Staff,'false')=ISNULL(@isTeacher,ISNULL(EU.Is_Teaching_Staff,'false')))
 	and (EUB.I_Brand_ID=ISNULL(@iBrandID,EUB.I_Brand_ID))
-	order by EU.I_User_ID desc
+	order by S_Username
 
 END

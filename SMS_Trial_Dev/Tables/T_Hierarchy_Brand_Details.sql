@@ -15,3 +15,9 @@
     CONSTRAINT [FK__T_Hierarc__I_Hie__5556704B] FOREIGN KEY ([I_Hierarchy_Master_ID]) REFERENCES [dbo].[T_Hierarchy_Master] ([I_Hierarchy_Master_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Hierarchy_Brand_Details] NOCHECK CONSTRAINT [FK__T_Hierarc__I_Bra__54624C12];
+
+
+

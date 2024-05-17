@@ -22,6 +22,12 @@
 
 
 GO
+ALTER TABLE [EXAMINATION].[T_Homework_Submission] NOCHECK CONSTRAINT [FK_T_Homework_Submission_T_Employee_Dtls];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [IndxHwID]
     ON [EXAMINATION].[T_Homework_Submission]([I_Homework_ID] ASC, [I_Student_Detail_ID] ASC);
 

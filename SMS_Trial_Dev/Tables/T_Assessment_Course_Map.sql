@@ -10,3 +10,9 @@
     CONSTRAINT [FK_T_Assessment_Course_Map_T_PreAssessment_Master] FOREIGN KEY ([I_PreAssessment_ID]) REFERENCES [ASSESSMENT].[T_PreAssessment_Master] ([I_PreAssessment_ID])
 );
 
+
+GO
+ALTER TABLE [ASSESSMENT].[T_Assessment_Course_Map] NOCHECK CONSTRAINT [FK_T_Assessment_Course_Map_T_Course_Master];
+
+
+

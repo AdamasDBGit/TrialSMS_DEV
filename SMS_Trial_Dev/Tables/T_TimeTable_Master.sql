@@ -37,6 +37,44 @@
 
 
 GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Center_Timeslot_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Centre_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_EOS_Skill_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Module_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Room_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Session_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Student_Batch_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Student_Sub_Batch_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_TimeTable_Master] NOCHECK CONSTRAINT [FK_T_TimeTable_Master_T_Term_Master];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [NC_TIMETBLE_CNTR_STST_DT]
     ON [dbo].[T_TimeTable_Master]([I_Center_ID] ASC, [I_Status] ASC, [Dt_Schedule_Date] ASC)
     INCLUDE([I_TimeTable_ID], [I_TimeSlot_ID]);

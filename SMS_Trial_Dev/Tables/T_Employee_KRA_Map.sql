@@ -17,3 +17,13 @@
     CONSTRAINT [FK_T_Employee_KRA_Map_T_KRA_Master] FOREIGN KEY ([I_KRA_ID]) REFERENCES [EOS].[T_KRA_Master] ([I_KRA_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Employee_KRA_Map] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__0ED9D1C1];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_KRA_Map] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__4AEEBBC8];
+
+
+

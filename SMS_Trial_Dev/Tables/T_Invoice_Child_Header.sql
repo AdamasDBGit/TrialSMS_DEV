@@ -16,6 +16,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Invoice_Child_Header] NOCHECK CONSTRAINT [FK__T_Invoice__I_Cou__26D08B8C];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [index_Course_ID_Invoice_Child]
     ON [dbo].[T_Invoice_Child_Header]([I_Course_ID] ASC);
 

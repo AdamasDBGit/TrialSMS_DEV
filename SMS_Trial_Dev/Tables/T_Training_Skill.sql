@@ -14,3 +14,25 @@
     CONSTRAINT [FK__T_Trainin__I_Ski__36C6FC33] FOREIGN KEY ([I_Skill_ID]) REFERENCES [dbo].[T_EOS_Skill_Master] ([I_Skill_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_Training_Skill] NOCHECK CONSTRAINT [FK__T_Trainin__I_Ski__32F66B4F];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Training_Skill] NOCHECK CONSTRAINT [FK__T_Trainin__I_Ski__33EA8F88];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Training_Skill] NOCHECK CONSTRAINT [FK__T_Trainin__I_Ski__34DEB3C1];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Training_Skill] NOCHECK CONSTRAINT [FK__T_Trainin__I_Ski__35D2D7FA];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Training_Skill] NOCHECK CONSTRAINT [FK__T_Trainin__I_Ski__36C6FC33];
+
+
+

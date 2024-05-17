@@ -21,3 +21,17 @@
     CONSTRAINT [FK_T_Fee_Sharing_Master_T_Fee_Component_Master] FOREIGN KEY ([I_Fee_Component_ID]) REFERENCES [dbo].[T_Fee_Component_Master] ([I_Fee_Component_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Fee_Sharing_Master] NOCHECK CONSTRAINT [FK_T_Fee_Sharing_Master_T_Brand_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Fee_Sharing_Master] NOCHECK CONSTRAINT [FK_T_Fee_Sharing_Master_T_Course_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Fee_Sharing_Master] NOCHECK CONSTRAINT [FK_T_Fee_Sharing_Master_T_Fee_Component_Master];
+
+
+

@@ -31,3 +31,21 @@
     CONSTRAINT [FK__T_Placeme__I_Stu__35A8BAC8] FOREIGN KEY ([I_Student_Detail_ID]) REFERENCES [dbo].[T_Student_Detail] ([I_Student_Detail_ID])
 );
 
+
+GO
+ALTER TABLE [PLACEMENT].[T_Placement_Registration] NOCHECK CONSTRAINT [FK__T_Placeme__I_Bra__34B4968F];
+
+
+GO
+ALTER TABLE [PLACEMENT].[T_Placement_Registration] NOCHECK CONSTRAINT [FK__T_Placeme__I_Cen__33C07256];
+
+
+GO
+ALTER TABLE [PLACEMENT].[T_Placement_Registration] NOCHECK CONSTRAINT [FK__T_Placeme__I_Cou__32CC4E1D];
+
+
+GO
+ALTER TABLE [PLACEMENT].[T_Placement_Registration] NOCHECK CONSTRAINT [FK__T_Placeme__I_Stu__35A8BAC8];
+
+
+

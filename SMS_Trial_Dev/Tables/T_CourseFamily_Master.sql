@@ -14,3 +14,17 @@
     CONSTRAINT [FK__T_CourseF__I_Bra__7DDAF99F] FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_CourseFamily_Master] NOCHECK CONSTRAINT [FK__T_CourseF__I_Bra__0ABE5CC3];
+
+
+GO
+ALTER TABLE [dbo].[T_CourseFamily_Master] NOCHECK CONSTRAINT [FK__T_CourseF__I_Bra__68BB4EE8];
+
+
+GO
+ALTER TABLE [dbo].[T_CourseFamily_Master] NOCHECK CONSTRAINT [FK__T_CourseF__I_Bra__7DDAF99F];
+
+
+

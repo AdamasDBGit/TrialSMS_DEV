@@ -39,3 +39,17 @@
     CONSTRAINT [FK_T_Student_Batch_Master_T_User_Master] FOREIGN KEY ([I_User_ID]) REFERENCES [dbo].[T_User_Master] ([I_User_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Student_Batch_Master] NOCHECK CONSTRAINT [FK_T_Student_Batch_Master_T_Course_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Batch_Master] NOCHECK CONSTRAINT [FK_T_Student_Batch_Master_T_Delivery_Pattern_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Batch_Master] NOCHECK CONSTRAINT [FK_T_Student_Batch_Master_T_Student_Batch_Master];
+
+
+

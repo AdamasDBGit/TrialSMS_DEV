@@ -17,3 +17,9 @@
     CONSTRAINT [FK_T_Fee_Component_Tax_T_Tax_Master] FOREIGN KEY ([I_Tax_ID]) REFERENCES [dbo].[T_Tax_Master] ([I_Tax_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Fee_Component_Tax] NOCHECK CONSTRAINT [FK_T_Fee_Component_Tax_T_Fee_Component_Master];
+
+
+

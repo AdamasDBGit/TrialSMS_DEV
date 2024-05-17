@@ -7,6 +7,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Batch_Exam_Faculty_Map] NOCHECK CONSTRAINT [FK_T_Batch_Exam_Faculty_Map_T_Batch_Exam_Map];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [NCI_I_Batch_Exam_ID]
     ON [dbo].[T_Batch_Exam_Faculty_Map]([I_Batch_Exam_ID] ASC);
 

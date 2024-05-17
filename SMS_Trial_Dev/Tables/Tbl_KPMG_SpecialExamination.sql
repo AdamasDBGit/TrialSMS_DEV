@@ -10,3 +10,9 @@
     CONSTRAINT [fk_Tbl_KPMG_SpecialExamination_FLd_Kpmg_SM_Id] FOREIGN KEY ([FLd_Kpmg_SM_Id]) REFERENCES [dbo].[Tbl_KPMG_SM_List] ([Fld_KPMG_SM_Id])
 );
 
+
+GO
+ALTER TABLE [dbo].[Tbl_KPMG_SpecialExamination] NOCHECK CONSTRAINT [fk_Tbl_KPMG_SpecialExamination_FLd_Kpmg_SM_Id];
+
+
+

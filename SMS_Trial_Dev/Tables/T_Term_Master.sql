@@ -17,6 +17,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Term_Master] NOCHECK CONSTRAINT [FK__T_Term_Ma__I_Bra__04315AC5];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [NCI_I_Brand_ID]
     ON [dbo].[T_Term_Master]([I_Brand_ID] ASC);
 

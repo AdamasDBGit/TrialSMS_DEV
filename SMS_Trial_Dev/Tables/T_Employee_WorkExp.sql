@@ -17,3 +17,13 @@
     CONSTRAINT [FK__T_Employe__I_Emp__5A30FF58] FOREIGN KEY ([I_Employee_ID]) REFERENCES [dbo].[T_Employee_Dtls] ([I_Employee_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Employee_WorkExp] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__1E1C1551];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_WorkExp] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__5A30FF58];
+
+
+

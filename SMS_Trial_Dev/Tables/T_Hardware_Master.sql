@@ -14,3 +14,9 @@
     CONSTRAINT [FK__T_Hardwar__I_Bra__0718B468] FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID])
 );
 
+
+GO
+ALTER TABLE [NETWORK].[T_Hardware_Master] NOCHECK CONSTRAINT [FK__T_Hardwar__I_Bra__0718B468];
+
+
+

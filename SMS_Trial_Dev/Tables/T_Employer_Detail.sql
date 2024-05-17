@@ -25,3 +25,17 @@
     CONSTRAINT [FK__T_Employe__I_Sta__1353A2C4] FOREIGN KEY ([I_State_ID]) REFERENCES [dbo].[T_State_Master] ([I_State_ID])
 );
 
+
+GO
+ALTER TABLE [PLACEMENT].[T_Employer_Detail] NOCHECK CONSTRAINT [FK__T_Employe__I_Cit__153BEB36];
+
+
+GO
+ALTER TABLE [PLACEMENT].[T_Employer_Detail] NOCHECK CONSTRAINT [FK__T_Employe__I_Cou__1447C6FD];
+
+
+GO
+ALTER TABLE [PLACEMENT].[T_Employer_Detail] NOCHECK CONSTRAINT [FK__T_Employe__I_Sta__1353A2C4];
+
+
+

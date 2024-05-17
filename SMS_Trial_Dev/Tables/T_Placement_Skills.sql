@@ -15,3 +15,9 @@
     CONSTRAINT [FK__T_Placeme__I_Stu__3F322502] FOREIGN KEY ([I_Student_Detail_ID]) REFERENCES [PLACEMENT].[T_Placement_Registration] ([I_Student_Detail_ID])
 );
 
+
+GO
+ALTER TABLE [PLACEMENT].[T_Placement_Skills] NOCHECK CONSTRAINT [FK__T_Placeme__I_Ski__4026493B];
+
+
+

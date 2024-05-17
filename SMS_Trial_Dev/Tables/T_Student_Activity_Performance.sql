@@ -15,3 +15,17 @@
     CONSTRAINT [FK_T_Student_Activity_Performance_T_Term_Master] FOREIGN KEY ([I_Term_ID]) REFERENCES [dbo].[T_Term_Master] ([I_Term_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Student_Activity_Performance] NOCHECK CONSTRAINT [FK_T_Student_Activity_Performance_T_Activity_Evaluation_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Activity_Performance] NOCHECK CONSTRAINT [FK_T_Student_Activity_Performance_T_Student_Activity_Details];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Activity_Performance] NOCHECK CONSTRAINT [FK_T_Student_Activity_Performance_T_Term_Master];
+
+
+

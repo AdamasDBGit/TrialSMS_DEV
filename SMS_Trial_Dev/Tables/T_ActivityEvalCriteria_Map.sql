@@ -6,3 +6,13 @@
     CONSTRAINT [FK_T_ActivityEvalCriteria_Master_T_Activity_Master] FOREIGN KEY ([I_Activity_ID]) REFERENCES [dbo].[T_Activity_Master] ([I_Activity_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_ActivityEvalCriteria_Map] NOCHECK CONSTRAINT [FK_T_ActivityEvalCriteria_Master_T_Activity_Evaluation_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_ActivityEvalCriteria_Map] NOCHECK CONSTRAINT [FK_T_ActivityEvalCriteria_Master_T_Activity_Master];
+
+
+

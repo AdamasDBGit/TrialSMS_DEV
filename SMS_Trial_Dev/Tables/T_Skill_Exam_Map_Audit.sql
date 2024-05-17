@@ -23,3 +23,13 @@
     CONSTRAINT [FK__T_Skill_E__I_Ski__687F1EAF] FOREIGN KEY ([I_Skill_ID]) REFERENCES [dbo].[T_EOS_Skill_Master] ([I_Skill_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Skill_Exam_Map_Audit] NOCHECK CONSTRAINT [FK__T_Skill_E__I_Ski__3AB853FF];
+
+
+GO
+ALTER TABLE [EOS].[T_Skill_Exam_Map_Audit] NOCHECK CONSTRAINT [FK__T_Skill_E__I_Ski__687F1EAF];
+
+
+

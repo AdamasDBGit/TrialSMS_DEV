@@ -18,3 +18,9 @@
     CONSTRAINT [FK_T_Fee_Sharing_OnAccount_T_Country_Master] FOREIGN KEY ([I_Country_ID]) REFERENCES [dbo].[T_Country_Master] ([I_Country_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Fee_Sharing_OnAccount] NOCHECK CONSTRAINT [FK_T_Fee_Sharing_OnAccount_T_Brand_Master];
+
+
+

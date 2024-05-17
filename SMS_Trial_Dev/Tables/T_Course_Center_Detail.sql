@@ -15,3 +15,9 @@
     CONSTRAINT [FK_T_Course_Center_Detail_T_Course_Center_Detail] FOREIGN KEY ([I_Course_Center_ID]) REFERENCES [dbo].[T_Course_Center_Detail] ([I_Course_Center_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Course_Center_Detail] NOCHECK CONSTRAINT [FK__T_Course___I_Cou__74EF1735];
+
+
+

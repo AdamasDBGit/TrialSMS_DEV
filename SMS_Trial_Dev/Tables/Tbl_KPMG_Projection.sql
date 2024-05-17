@@ -12,3 +12,13 @@
     CONSTRAINT [fk_Tbl_KPMG_ProjectionHistorical_Fld_KPMG_Course_Id] FOREIGN KEY ([Fld_KPMG_Course_Id]) REFERENCES [dbo].[T_Course_Master] ([I_Course_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[Tbl_KPMG_Projection] NOCHECK CONSTRAINT [fk_Tbl_KPMG_Projection_Fld_KPMG_Course_Id];
+
+
+GO
+ALTER TABLE [dbo].[Tbl_KPMG_Projection] NOCHECK CONSTRAINT [fk_Tbl_KPMG_ProjectionHistorical_Fld_KPMG_Course_Id];
+
+
+

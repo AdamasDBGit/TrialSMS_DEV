@@ -1,4 +1,4 @@
-﻿--exec [dbo].[uspActivityTimeValidation] 107,'3DBDBCD27C854AAB9F65E4A65F37B99B'
+﻿--exec [dbo].[uspActivityTimeValidation] 1,'57EFB5FAE0464797B8D695BFAC406EF5'
 CREATE PROCEDURE [dbo].[uspActivityTimeValidation]
 (
  @iBrandID int = null
@@ -39,11 +39,12 @@ join dbo.T_Class as TC on TC.I_Class_ID = TSGC.I_Class_ID
 join dbo.T_School_Group_Class_Timing as TCGCT on TCGCT.I_School_Group_ID = TSG.I_School_Group_ID and TCGCT.I_Class_ID = TC.I_Class_ID 
 join dbo.T_Time_Validation_Type as TTVT on TTVT.I_Brand_ID = TSG.I_Brand_ID  
 join dbo.T_Time_Validation_Master as TTVM on TTVT.I_Time_Validation_Type_ID = TTVM.I_Time_Validation_Type_ID  
-Left Join T_ERP_Saas_Pattern_Header SPH on SPH.I_Brand_ID=TSPM.I_Brand_ID
+Left Join T_ERP_Saas_Pattern_Header SPH on SPH.I_Brand_ID=TSPM.I_Brand_ID 
 Left Join T_ERP_Saas_Pattern_Child_Header SPCH on SPCH.I_Pattern_HeaderID=SPH.I_Pattern_HeaderID 
 left join T_Brand_Master TBM ON TBM.I_Brand_ID=TSPM.I_Brand_ID
    where TSBD.I_Status=1  and TTVM.I_Status=1 and TCGCT.I_Status=1
    and TPM.S_Token=@sToken  
     And SPH.S_Property_Name='BRAND_LOGO'  
+	and SPH.Is_Active = 1
    --and TTVT.I_Brand_ID=@iBrandID
 END

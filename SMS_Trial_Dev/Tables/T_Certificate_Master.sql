@@ -15,3 +15,13 @@
     CONSTRAINT [FK_T_Certificate_Master_T_Template_Master] FOREIGN KEY ([I_Template_ID]) REFERENCES [dbo].[T_Template_Master] ([I_Template_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Certificate_Master] NOCHECK CONSTRAINT [FK__T_Certifi__I_Bra__022916C2];
+
+
+GO
+ALTER TABLE [dbo].[T_Certificate_Master] NOCHECK CONSTRAINT [FK_T_Certificate_Master_T_Template_Master];
+
+
+

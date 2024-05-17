@@ -5,3 +5,9 @@
     CONSTRAINT [FK_T_Coupon_Course_Map_T_Course_Master] FOREIGN KEY ([I_Course_ID]) REFERENCES [dbo].[T_Course_Master] ([I_Course_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Coupon_Course_Map] NOCHECK CONSTRAINT [FK_T_Coupon_Course_Map_T_Course_Master];
+
+
+

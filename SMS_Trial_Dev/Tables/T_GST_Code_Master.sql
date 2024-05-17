@@ -14,3 +14,9 @@
     CONSTRAINT [FK_T_GST_Code_Master_T_State_Master] FOREIGN KEY ([I_State_ID]) REFERENCES [dbo].[T_State_Master] ([I_State_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_GST_Code_Master] NOCHECK CONSTRAINT [FK_T_GST_Code_Master_T_State_Master];
+
+
+

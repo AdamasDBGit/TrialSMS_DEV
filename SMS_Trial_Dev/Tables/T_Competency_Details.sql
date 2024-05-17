@@ -14,3 +14,9 @@
     CONSTRAINT [FK_T_Competency_Details_T_Pool_Master] FOREIGN KEY ([I_Pool_ID]) REFERENCES [EXAMINATION].[T_Pool_Master] ([I_Pool_ID])
 );
 
+
+GO
+ALTER TABLE [ASSESSMENT].[T_Competency_Details] NOCHECK CONSTRAINT [FK_T_Competency_Details_T_Brand_Master];
+
+
+

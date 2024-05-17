@@ -13,3 +13,9 @@
     CONSTRAINT [FK_T_Status_Master_T_Brand_Master] FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Status_Master] NOCHECK CONSTRAINT [FK_T_Status_Master_T_Brand_Master];
+
+
+

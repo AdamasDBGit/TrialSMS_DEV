@@ -19,3 +19,21 @@
     CONSTRAINT [FK_T_Dropout_Details_T_Student_Batch_Master] FOREIGN KEY ([I_Batch_ID]) REFERENCES [dbo].[T_Student_Batch_Master] ([I_Batch_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Details] NOCHECK CONSTRAINT [FK__T_Dropout__I_Cen__03124E03];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Details] NOCHECK CONSTRAINT [FK__T_Dropout__I_Stu__2196D523];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Details] NOCHECK CONSTRAINT [FK_T_Dropout_Details_T_Dropout_Type_Master];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_Dropout_Details] NOCHECK CONSTRAINT [FK_T_Dropout_Details_T_Student_Batch_Master];
+
+
+

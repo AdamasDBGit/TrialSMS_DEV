@@ -24,3 +24,13 @@
     CONSTRAINT [FK__T_Center___I_Sta__7C9B25F5] FOREIGN KEY ([I_State_ID]) REFERENCES [dbo].[T_State_Master] ([I_State_ID])
 );
 
+
+GO
+ALTER TABLE [NETWORK].[T_Center_Address] NOCHECK CONSTRAINT [FK__T_Center___I_Cit__7D8F4A2E];
+
+
+GO
+ALTER TABLE [NETWORK].[T_Center_Address] NOCHECK CONSTRAINT [FK__T_Center___I_Sta__7C9B25F5];
+
+
+

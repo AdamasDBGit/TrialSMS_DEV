@@ -21,3 +21,17 @@
     CONSTRAINT [FK_T_Employee_Exam_Result_T_Enquiry_Regn_Detail] FOREIGN KEY ([I_Enquiry_Regn_ID]) REFERENCES [dbo].[T_Enquiry_Regn_Detail] ([I_Enquiry_Regn_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Employee_Exam_Result] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__0A151CA4];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Exam_Result] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__0BFD6516];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Exam_Result] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__48124F1D];
+
+
+

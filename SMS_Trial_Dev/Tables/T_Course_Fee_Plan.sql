@@ -16,9 +16,8 @@
     [N_No_Of_Installments]     INT          NULL,
     [I_New_I_Fee_Structure_ID] INT          NULL,
     [I_Schhol_Group_ID]        INT          NULL,
-    CONSTRAINT [PK__T_Course_Fee_Pla__75392FF8] PRIMARY KEY CLUSTERED ([I_Course_Fee_Plan_ID] ASC),
-    CONSTRAINT [FK__T_Course___I_Cou__19CB9629] FOREIGN KEY ([I_Course_Delivery_ID]) REFERENCES [dbo].[T_Course_Delivery_Map] ([I_Course_Delivery_ID]),
-    CONSTRAINT [FK__T_Course___I_Cou__67951C17] FOREIGN KEY ([I_Course_ID]) REFERENCES [dbo].[T_Course_Master] ([I_Course_ID]),
-    CONSTRAINT [FK__T_Course___I_Cur__1BB3DE9B] FOREIGN KEY ([I_Currency_ID]) REFERENCES [dbo].[T_Currency_Master] ([I_Currency_ID])
+    CONSTRAINT [PK__T_Course_Fee_Pla__75392FF8] PRIMARY KEY CLUSTERED ([I_Course_Fee_Plan_ID] ASC)
 );
+
+
 

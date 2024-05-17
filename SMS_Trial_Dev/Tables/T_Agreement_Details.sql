@@ -53,3 +53,17 @@
     CONSTRAINT [FK__T_Agreeme__I_Sta__77D670D8] FOREIGN KEY ([I_State_ID]) REFERENCES [dbo].[T_State_Master] ([I_State_ID])
 );
 
+
+GO
+ALTER TABLE [NETWORK].[T_Agreement_Details] NOCHECK CONSTRAINT [FK__T_Agreeme__I_Bra__75EE2866];
+
+
+GO
+ALTER TABLE [NETWORK].[T_Agreement_Details] NOCHECK CONSTRAINT [FK__T_Agreeme__I_Cit__76E24C9F];
+
+
+GO
+ALTER TABLE [NETWORK].[T_Agreement_Details] NOCHECK CONSTRAINT [FK__T_Agreeme__I_Sta__77D670D8];
+
+
+

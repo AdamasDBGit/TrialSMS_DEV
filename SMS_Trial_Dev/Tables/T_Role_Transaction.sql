@@ -11,3 +11,9 @@
     CONSTRAINT [FK__T_Role_Tr__I_Rol__151B244E] FOREIGN KEY ([I_Role_ID]) REFERENCES [dbo].[T_Role_Master] ([I_Role_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Role_Transaction] NOCHECK CONSTRAINT [FK__T_Role_Tr__I_Rol__151B244E];
+
+
+

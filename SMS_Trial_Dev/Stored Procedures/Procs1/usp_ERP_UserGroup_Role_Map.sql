@@ -37,7 +37,7 @@ BEGIN
 	T_ERP_UserGroup_Role_Brand_Map as URB 
 	left join
 	#SplitRoles as r on URB.I_Role_ID=r.RoleID
-	where URB.I_User_Group_Master_ID=@iUserGroupID and r.RoleID IS NULL
+	where URB.I_User_Group_Master_ID=@iUserGroupID and r.RoleID IS NULL and I_Brand_ID=@iBrandID
 
 
 	--select * from T_ERP_UserGroup_Role_Brand_Map as URB 
@@ -58,7 +58,7 @@ BEGIN
 	,RoleID as I_Role_ID,@iBrandID as I_Brand_ID,1 as Is_Active,@CreatedBy as I_Created_By,GETDATE() as Dt_created_Dt from 
 	#SplitRoles as SR
 	inner join
-	T_ERP_Role_Master as ERM on SR.RoleID=ERM.I_Role_ID and ERM.I_Status=1
+	T_ERP_Role_Master as ERM on SR.RoleID=ERM.I_Role_ID and ERM.I_Status=1 and ERM.I_Brand_ID=@iBrandID
 	left join
 	T_ERP_UserGroup_Role_Brand_Map as URB on SR.RoleID=URB.I_Role_ID and URB.I_Brand_ID=@iBrandID and URB.I_User_Group_Master_ID=@iUserGroupID 
 	where URB.I_Role_ID IS NULL
@@ -76,7 +76,7 @@ BEGIN
 	#SplitRoles as SR
 	inner join
 	T_ERP_UserGroup_Role_Brand_Map as URB on SR.RoleID=URB.I_Role_ID and URB.I_Brand_ID=@iBrandID and URB.I_User_Group_Master_ID=@iUserGroupID 
-	where SR.RoleID IS NOT NULL 
+	where SR.RoleID IS NOT NULL and  URB.I_Brand_ID=@iBrandID
 	
 
 
@@ -84,8 +84,7 @@ BEGIN
 	T_ERP_Users_Role_Permission_Map as EYRPM 
 	left join
 	#SplitRoles as r on EYRPM.Role_Id=r.RoleID
-	where EYRPM.User_Group_ID=@iUserGroupID and r.RoleID IS NULL
-
+	where EYRPM.User_Group_ID=@iUserGroupID and r.RoleID IS NULL and EYRPM.Brand_ID=@iBrandID
 
 
 
@@ -110,7 +109,7 @@ UsergroupRole.I_User_Group_Master_ID as User_GroupID,@iBrandID as BrandID from
  (select I_Role_ID,I_Permission_ID from T_ERP_Permission_Role_Map as PRM where I_Status=1)as PRM 
  on PRM.I_Role_ID=UsergroupRole.I_Role_ID 
  inner join
- T_ERP_Users_Role_Permission_Map as URP on URP.User_Group_ID=UsergroupRole.I_User_Group_Master_ID and Is_Active=1
+ T_ERP_Users_Role_Permission_Map as URP on URP.User_Group_ID=UsergroupRole.I_User_Group_Master_ID and Is_Active=1 and Brand_ID=@iBrandID
  inner join
  T_ERP_User as EU on EU.I_User_ID=URP.I_User_Id and EU.I_Status=1
  inner join
@@ -120,7 +119,7 @@ UsergroupRole.I_User_Group_Master_ID as User_GroupID,@iBrandID as BrandID from
  where UsergroupRole.I_User_Group_Master_ID=@iUserGroupID) as new
  left join
  T_ERP_Users_Role_Permission_Map as URP on URP.I_User_Id=new.I_User_Id and URP.Role_Id=new.RoleID 
- and URP.Permission_ID=new.Permission_ID and URP.User_Group_ID=new.User_GroupID
+ and URP.Permission_ID=new.Permission_ID and URP.User_Group_ID=new.User_GroupID and URP.Brand_ID=@iBrandID and Is_Active=1
  where URP.I_User_Id IS NULL
 
 

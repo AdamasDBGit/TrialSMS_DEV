@@ -14,3 +14,13 @@
     CONSTRAINT [FK_T_Bridge_Course_Mapping_T_Course_Master1] FOREIGN KEY ([I_Next_Course_ID]) REFERENCES [dbo].[T_Course_Master] ([I_Course_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Bridge_Course_Mapping] NOCHECK CONSTRAINT [FK_T_Bridge_Course_Mapping_T_Course_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Bridge_Course_Mapping] NOCHECK CONSTRAINT [FK_T_Bridge_Course_Mapping_T_Course_Master1];
+
+
+

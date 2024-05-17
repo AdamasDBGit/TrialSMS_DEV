@@ -17,3 +17,9 @@
     CONSTRAINT [FK__T_Enquiry__I_Pro__3706F355] FOREIGN KEY ([I_Employee_ID]) REFERENCES [dbo].[T_Employee_Dtls] ([I_Employee_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Followup] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Pro__3706F355];
+
+
+

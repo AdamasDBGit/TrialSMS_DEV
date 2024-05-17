@@ -19,3 +19,9 @@
     CONSTRAINT [FK_T_Student_Registration_Details_T_Student_Batch_Master] FOREIGN KEY ([I_Batch_ID]) REFERENCES [dbo].[T_Student_Batch_Master] ([I_Batch_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Student_Registration_Details] NOCHECK CONSTRAINT [FK_T_Student_Registration_Details_T_Student_Batch_Master];
+
+
+

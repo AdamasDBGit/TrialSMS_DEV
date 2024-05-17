@@ -25,3 +25,9 @@
     CONSTRAINT [FK_T_Center_E_Project_Manual_T_E_Project_Group] FOREIGN KEY ([I_E_Project_Group_ID]) REFERENCES [ACADEMICS].[T_E_Project_Group] ([I_E_Project_Group_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_Center_E_Project_Manual] NOCHECK CONSTRAINT [FK__T_Center___I_Cou__5CECA51B];
+
+
+

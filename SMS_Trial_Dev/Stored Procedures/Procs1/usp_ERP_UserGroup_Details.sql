@@ -2,6 +2,7 @@
 -- Author:		<Susmita Paul>
 -- Create date: <2024-April-22>
 -- Description:	<get UserID and RoleIDs>
+--exec usp_ERP_UserGroup_Details 1,1
 -- =============================================
 CREATE PROCEDURE [dbo].[usp_ERP_UserGroup_Details]
 	-- Add the parameters for the stored procedure here
@@ -18,6 +19,7 @@ BEGIN
 	from 
 	T_ERP_User_Group_Master 
 	where I_User_Group_Master_ID=ISNULL(@iUserGroupID,I_User_Group_Master_ID) and I_Brand_ID=@iBrandID
+	order by S_User_GroupName asc
 
 
 	select DISTINCT

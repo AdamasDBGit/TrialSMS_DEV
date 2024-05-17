@@ -161,6 +161,136 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Cur__4C02103B];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Cur__4CF63474];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Enq__4460EE73];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Inc__48317F57];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Inf__4EDE7CE6];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Occ__4925A390];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Pre__4A19C7C9];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Qua__464936E5];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Str__473D5B1E];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Blood_Group];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Business_Type];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Business_Type1];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Corporate_Details];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Enquiry_Regn_Detail];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Enquiry_Regn_Detail1];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Enquiry_Regn_Detail2];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Enrolment_Type_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Income_Group_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Income_Group_Master1];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Income_Group_Master2];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Marital_Status];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Native_Language];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Occupation_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Occupation_Master1];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Qualification_Name_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Qualification_Name_Master1];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Residence_Area_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Scholar_Type_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_Seat_Type_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_User_Nationality];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_User_Religion];
+
+
+GO
+ALTER TABLE [dbo].[T_Enquiry_Regn_Detail] NOCHECK CONSTRAINT [FK_T_Enquiry_Regn_Detail_T_User_Sex];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [Ix_B_IsPreEnquiry]
     ON [dbo].[T_Enquiry_Regn_Detail]([B_IsPreEnquiry] ASC, [I_ERP_Entry] ASC, [App_Payment_Status] ASC)
     INCLUDE([I_Enquiry_Regn_ID], [I_Centre_Id], [I_Info_Source_ID], [R_I_AdmStgTypeID], [I_Class_ID]);

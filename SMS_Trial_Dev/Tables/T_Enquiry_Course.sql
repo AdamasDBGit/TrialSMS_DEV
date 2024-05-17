@@ -14,6 +14,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Enquiry_Course] NOCHECK CONSTRAINT [FK__T_Enquiry__I_Cou__63CEACD4];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [Ix_I_Enquiry_Regn_ID]
     ON [dbo].[T_Enquiry_Course]([I_Enquiry_Regn_ID] ASC);
 

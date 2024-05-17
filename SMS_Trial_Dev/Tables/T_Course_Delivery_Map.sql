@@ -13,3 +13,13 @@
     CONSTRAINT [FK__T_Course___I_Del__22751F6C] FOREIGN KEY ([I_Delivery_Pattern_ID]) REFERENCES [dbo].[T_Delivery_Pattern_Master] ([I_Delivery_Pattern_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Course_Delivery_Map] NOCHECK CONSTRAINT [FK__T_Course___I_Cou__73FAF2FC];
+
+
+GO
+ALTER TABLE [dbo].[T_Course_Delivery_Map] NOCHECK CONSTRAINT [FK__T_Course___I_Del__22751F6C];
+
+
+

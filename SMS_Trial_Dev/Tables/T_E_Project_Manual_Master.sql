@@ -21,3 +21,13 @@
     CONSTRAINT [FK__T_E_Proje__I_Ter__74620BBE] FOREIGN KEY ([I_Term_ID]) REFERENCES [dbo].[T_Term_Master] ([I_Term_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_E_Project_Manual_Master] NOCHECK CONSTRAINT [FK__T_E_Proje__I_Cou__30274DA1];
+
+
+GO
+ALTER TABLE [ACADEMICS].[T_E_Project_Manual_Master] NOCHECK CONSTRAINT [FK__T_E_Proje__I_Cou__7279C34C];
+
+
+

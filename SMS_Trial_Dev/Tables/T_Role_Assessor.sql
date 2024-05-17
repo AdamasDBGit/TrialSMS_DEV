@@ -13,3 +13,9 @@
     CONSTRAINT [FK__T_Role_As__I_Rol__5FE9D8AE] FOREIGN KEY ([I_Role_ID]) REFERENCES [dbo].[T_Role_Master] ([I_Role_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Role_Assessor] NOCHECK CONSTRAINT [FK__T_Role_As__I_Rol__5FE9D8AE];
+
+
+

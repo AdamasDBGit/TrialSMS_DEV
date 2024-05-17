@@ -8,3 +8,9 @@
     CONSTRAINT [FK_T_Employee_Training_Details_T_Employee_Training_Master] FOREIGN KEY ([I_Training_ID]) REFERENCES [EOS].[T_Employee_Training_Master] ([I_Training_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Employee_Training_Details] NOCHECK CONSTRAINT [FK_T_Employee_Training_Details_T_Employee_Dtls];
+
+
+

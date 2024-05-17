@@ -25,3 +25,29 @@
     CONSTRAINT [FK_T_User_Documents_T_Term_Master] FOREIGN KEY ([I_Term_ID]) REFERENCES [dbo].[T_Term_Master] ([I_Term_ID])
 );
 
+
+GO
+ALTER TABLE [DOCUMENT].[T_User_Documents] NOCHECK CONSTRAINT [FK_T_User_Documents_T_Brand_Master];
+
+
+GO
+ALTER TABLE [DOCUMENT].[T_User_Documents] NOCHECK CONSTRAINT [FK_T_User_Documents_T_Course_Master];
+
+
+GO
+ALTER TABLE [DOCUMENT].[T_User_Documents] NOCHECK CONSTRAINT [FK_T_User_Documents_T_Hierarchy_Details];
+
+
+GO
+ALTER TABLE [DOCUMENT].[T_User_Documents] NOCHECK CONSTRAINT [FK_T_User_Documents_T_Module_Master];
+
+
+GO
+ALTER TABLE [DOCUMENT].[T_User_Documents] NOCHECK CONSTRAINT [FK_T_User_Documents_T_Student_Batch_Master];
+
+
+GO
+ALTER TABLE [DOCUMENT].[T_User_Documents] NOCHECK CONSTRAINT [FK_T_User_Documents_T_Term_Master];
+
+
+

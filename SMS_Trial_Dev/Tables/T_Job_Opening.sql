@@ -7,3 +7,9 @@
     CONSTRAINT [FK_T_Job_Opening_T_Employer_Detail] FOREIGN KEY ([I_Vacancy_ID]) REFERENCES [PLACEMENT].[T_Vacancy_Detail] ([I_Vacancy_ID])
 );
 
+
+GO
+ALTER TABLE [PLACEMENT].[T_Job_Opening] NOCHECK CONSTRAINT [FK_T_Job_Opening_T_City_Master];
+
+
+

@@ -25,3 +25,21 @@
     CONSTRAINT [FK__T_Courier__I_Sta__569C9EAD] FOREIGN KEY ([I_State_ID]) REFERENCES [dbo].[T_State_Master] ([I_State_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Courier_Master] NOCHECK CONSTRAINT [FK__T_Courier__I_Cit__2AF6222B];
+
+
+GO
+ALTER TABLE [dbo].[T_Courier_Master] NOCHECK CONSTRAINT [FK__T_Courier__I_Cit__54B4563B];
+
+
+GO
+ALTER TABLE [dbo].[T_Courier_Master] NOCHECK CONSTRAINT [FK__T_Courier__I_Sta__2CDE6A9D];
+
+
+GO
+ALTER TABLE [dbo].[T_Courier_Master] NOCHECK CONSTRAINT [FK__T_Courier__I_Sta__569C9EAD];
+
+
+

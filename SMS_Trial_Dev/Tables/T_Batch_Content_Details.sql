@@ -23,3 +23,21 @@
     CONSTRAINT [FK_T_Batch_Content_Details_T_Term_Master] FOREIGN KEY ([I_Term_ID]) REFERENCES [dbo].[T_Term_Master] ([I_Term_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Batch_Content_Details] NOCHECK CONSTRAINT [FK_T_Batch_Content_Details_T_Module_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Batch_Content_Details] NOCHECK CONSTRAINT [FK_T_Batch_Content_Details_T_Session_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Batch_Content_Details] NOCHECK CONSTRAINT [FK_T_Batch_Content_Details_T_Student_Batch_Master];
+
+
+GO
+ALTER TABLE [dbo].[T_Batch_Content_Details] NOCHECK CONSTRAINT [FK_T_Batch_Content_Details_T_Term_Master];
+
+
+

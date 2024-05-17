@@ -10,7 +10,7 @@ Parameters: CenterID, TimeSlotID,CourseID, TermID, ModuleID,TimeSlotFlag
 Returns:	
 Modified By: 
 ******************************************************************************************************************/
---exec uspGetEventList
+--exec uspGetEventList 1,null,1
 CREATE PROCEDURE [dbo].[uspGetEventList]
 (
 	@iBrandID int = null
@@ -22,8 +22,8 @@ AS
 BEGIN
 DECLARE @start datetime
 DECLARE @end datetime
-set @start = (select top 1 Dt_Session_Start_Date from T_School_Academic_Session_Master where I_School_Session_ID=1)
-set @end = (select top 1 Dt_Session_End_Date from T_School_Academic_Session_Master where I_School_Session_ID=1)
+set @start = (select top 1 Dt_Session_Start_Date from T_School_Academic_Session_Master where I_Brand_ID = @iBrandID)
+set @end = (select top 1 Dt_Session_End_Date from T_School_Academic_Session_Master where I_Brand_ID = @iBrandID)
 SELECT 
 AM.*,
 TE.I_Event_ID ID 

@@ -21,3 +21,9 @@
     CONSTRAINT [FK_T_Fee_Component_Master_T_Fee_Component_Type] FOREIGN KEY ([I_Fee_Component_Type_ID]) REFERENCES [dbo].[T_Fee_Component_Type] ([I_Fee_Component_Type_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Fee_Component_Master] NOCHECK CONSTRAINT [FK_T_Fee_Component_Master_T_Brand_Master];
+
+
+

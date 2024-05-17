@@ -61,7 +61,8 @@ BEGIN
  --AND (TERSD.I_Period_No = @PeriodNo)              
  --)              
  BEGIN              
- SELECT 1 AS StatusFlag, 'Faculty has already been assigned for Class - ' + Replace(@ClassName,'Class','') + ', Period ' + CAST(@PeriodNo AS varchar(5)) + ' at the same time. ' AS Message              
+ --SELECT 1 AS StatusFlag, 'Faculty has already been assigned for Class - ' + Replace(@ClassName,'Class','') + ', Period ' + CAST(@PeriodNo AS varchar(5)) + ' at the same time. ' AS Message 
+ SELECT 0 AS StatusFlag, 'Faculty avaliable for new allocation' AS Message    
  END          
  ---------Checking for Previous period        
  ELSE  IF        
@@ -79,7 +80,8 @@ BEGIN
  --and @Prev_Period<>1 --OR @Post_Period<>@LastPeriodNo      
          
 Begin        
- SELECT 1 AS StatusFlag, 'Faculty was already been assigned for consecutive period'  AS Message       
+ --SELECT 1 AS StatusFlag, 'Faculty was already been assigned for consecutive period'  AS Message 
+ SELECT 0 AS StatusFlag, 'Faculty avaliable for new allocation' AS Message    
         
 End        
  Else        

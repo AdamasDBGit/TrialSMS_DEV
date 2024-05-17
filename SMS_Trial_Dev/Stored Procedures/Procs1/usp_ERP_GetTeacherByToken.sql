@@ -1,4 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[usp_ERP_GetTeacherByToken]  
+﻿--exec [usp_ERP_GetTeacherByToken] 'DE8DBD57B8844D308827AFA5C1BB6367'
+CREATE PROCEDURE [dbo].[usp_ERP_GetTeacherByToken]  
 (  
  @sToken nvarchar(max)  
 )  
@@ -23,8 +24,10 @@ SET @FinancialYearEnd = DATEFROMPARTS(YEAR(@FinancialYearStart) + 1, 3, 31); -- 
 --SELECT @FinancialYearStart AS FinancialYearStartDate, @FinancialYearEnd AS FinancialYearEndDate;
 
 Declare @currentSessionid int
-SET @currentSessionid =(select I_School_Session_ID from T_School_Academic_Session_Master where Dt_Session_Start_Date=@FinancialYearStart
-AND Dt_Session_End_Date=@FinancialYearEnd AND I_Status=1)
+declare @brandID int
+set @brandID = (select top 1 I_Brand_ID from T_Faculty_Master t1 inner join T_ERP_User t2
+on t1.I_User_ID = t2.I_User_ID where t2.S_Token=@sToken)
+SET @currentSessionid =(select I_School_Session_ID from T_School_Academic_Session_Master where I_Brand_ID=@brandID AND I_Status=1)
 --------------------
 set @userid=(select I_User_ID from T_ERP_User where S_Token =@sToken)  
 select   

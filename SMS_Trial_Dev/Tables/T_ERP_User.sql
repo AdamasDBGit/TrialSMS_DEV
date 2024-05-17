@@ -15,8 +15,11 @@
     [S_Token]               NVARCHAR (MAX) NULL,
     [IsAllAllowedEligible]  BIT            NULL,
     [Is_Teaching_Staff]     BIT            NULL,
-    [Is_Non_Teaching_Staff] BIT            NULL
+    [Is_Non_Teaching_Staff] BIT            NULL,
+    [S_FireBase_Token]      NVARCHAR (500) NULL
 );
+
+
 
 
 GO

@@ -15,3 +15,9 @@
     CONSTRAINT [FK__T_Vacancy__I_Vac__2295E654] FOREIGN KEY ([I_Vacancy_ID]) REFERENCES [PLACEMENT].[T_Vacancy_Detail] ([I_Vacancy_ID])
 );
 
+
+GO
+ALTER TABLE [PLACEMENT].[T_Vacancy_Skills] NOCHECK CONSTRAINT [FK__T_Vacancy__I_Ski__21A1C21B];
+
+
+

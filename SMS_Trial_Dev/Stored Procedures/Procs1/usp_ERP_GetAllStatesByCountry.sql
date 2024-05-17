@@ -19,4 +19,5 @@ BEGIN
 	S_State_Name
 	FROM T_State_Master
 	WHERE (I_Country_ID = @iCountryID OR @iCountryID IS NULL)
+	and I_Status=1
 END

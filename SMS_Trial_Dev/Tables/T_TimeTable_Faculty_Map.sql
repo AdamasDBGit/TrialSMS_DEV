@@ -9,6 +9,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_TimeTable_Faculty_Map] NOCHECK CONSTRAINT [FK_T_TimeTable_Faculty_Map_T_Employee_Dtls];
+
+
+
+
+GO
 CREATE TRIGGER [dbo].[trgAfterInsertTimetableFacultyMap] ON [dbo].[T_TimeTable_Faculty_Map]
     AFTER INSERT
 AS

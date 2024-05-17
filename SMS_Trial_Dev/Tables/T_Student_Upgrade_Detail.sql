@@ -36,3 +36,29 @@
     CONSTRAINT [FK__T_Student__I_Upg__70276686] FOREIGN KEY ([I_Upgrade_Invoice_Header_ID]) REFERENCES [dbo].[T_Invoice_Parent] ([I_Invoice_Header_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Student_Upgrade_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Cou__461065D2];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Upgrade_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Cou__47048A0B];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Upgrade_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Cou__47F8AE44];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Upgrade_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Cou__688644BE];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Upgrade_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Cou__697A68F7];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Upgrade_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Cou__6A6E8D30];
+
+
+

@@ -11,7 +11,13 @@
     [Dt_Crtd_On]            DATETIME      NULL,
     [Dt_Upd_On]             DATETIME      NULL,
     PRIMARY KEY CLUSTERED ([I_Student_Tag_ID] ASC),
-    FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID]),
-    FOREIGN KEY ([I_Enquiry_Regn_ID]) REFERENCES [dbo].[T_Enquiry_Regn_Detail] ([I_Enquiry_Regn_ID])
+    FOREIGN KEY ([I_Enquiry_Regn_ID]) REFERENCES [dbo].[T_Enquiry_Regn_Detail] ([I_Enquiry_Regn_ID]),
+    CONSTRAINT [FK__T_Student__I_Bra__74CF4D6E] FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID])
 );
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Tags] NOCHECK CONSTRAINT [FK__T_Student__I_Bra__74CF4D6E];
+
+
 

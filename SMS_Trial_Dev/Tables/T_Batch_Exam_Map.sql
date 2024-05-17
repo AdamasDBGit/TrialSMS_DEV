@@ -19,6 +19,24 @@
 
 
 GO
+ALTER TABLE [EXAMINATION].[T_Batch_Exam_Map] NOCHECK CONSTRAINT [FK_T_Batch_Exam_Map_T_Exam_Component_Master];
+
+
+GO
+ALTER TABLE [EXAMINATION].[T_Batch_Exam_Map] NOCHECK CONSTRAINT [FK_T_Batch_Exam_Map_T_Module_Master];
+
+
+GO
+ALTER TABLE [EXAMINATION].[T_Batch_Exam_Map] NOCHECK CONSTRAINT [FK_T_Batch_Exam_Map_T_Student_Batch_Master];
+
+
+GO
+ALTER TABLE [EXAMINATION].[T_Batch_Exam_Map] NOCHECK CONSTRAINT [FK_T_Batch_Exam_Map_T_Term_Master];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [NCI_I_Batch_ID]
     ON [EXAMINATION].[T_Batch_Exam_Map]([I_Batch_ID] ASC);
 

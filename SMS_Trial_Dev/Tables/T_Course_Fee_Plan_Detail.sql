@@ -20,6 +20,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Course_Fee_Plan_Detail] NOCHECK CONSTRAINT [FK__T_Course___I_Fee__1D9C270D];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [IX_I_Fee_Component_ID]
     ON [dbo].[T_Course_Fee_Plan_Detail]([I_Fee_Component_ID] ASC, [I_Course_Fee_Plan_ID] ASC)
     INCLUDE([I_Course_Fee_Plan_Detail_ID]);

@@ -13,3 +13,9 @@
     CONSTRAINT [FK__T_Book_Ma__I_Bra__06EDCBDF] FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Book_Master] NOCHECK CONSTRAINT [FK__T_Book_Ma__I_Bra__06EDCBDF];
+
+
+

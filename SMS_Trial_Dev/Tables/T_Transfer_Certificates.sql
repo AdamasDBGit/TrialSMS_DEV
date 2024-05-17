@@ -16,6 +16,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Transfer_Certificates] NOCHECK CONSTRAINT [FK_T_Transfer_Certificates_T_Student_Detail];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [IX_T_Transfer_Certificates]
     ON [dbo].[T_Transfer_Certificates]([I_Transfer_Cert_Req_ID] ASC);
 

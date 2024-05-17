@@ -12,3 +12,9 @@
     CONSTRAINT [FK_T_Student_Survey_Details_T_Student_Detail] FOREIGN KEY ([I_Student_Detail_ID]) REFERENCES [dbo].[T_Student_Detail] ([I_Student_Detail_ID])
 );
 
+
+GO
+ALTER TABLE [STUDENTFEATURES].[T_Student_Survey_Details] NOCHECK CONSTRAINT [FK_T_Student_Survey_Details_T_Student_Detail];
+
+
+

@@ -17,3 +17,21 @@
     CONSTRAINT [FK_T_Student_Transaction_Details_T_Transaction_Type_Master] FOREIGN KEY ([I_Enquiry_Regn_ID]) REFERENCES [dbo].[T_Enquiry_Regn_Detail] ([I_Enquiry_Regn_ID])
 );
 
+
+GO
+ALTER TABLE [ERP].[T_Student_Transaction_Details] NOCHECK CONSTRAINT [FK_T_Student_Transaction_Details_T_Brand_Master];
+
+
+GO
+ALTER TABLE [ERP].[T_Student_Transaction_Details] NOCHECK CONSTRAINT [FK_T_Student_Transaction_Details_T_Student_Detail];
+
+
+GO
+ALTER TABLE [ERP].[T_Student_Transaction_Details] NOCHECK CONSTRAINT [FK_T_Student_Transaction_Details_T_Student_Transaction_Details];
+
+
+GO
+ALTER TABLE [ERP].[T_Student_Transaction_Details] NOCHECK CONSTRAINT [FK_T_Student_Transaction_Details_T_Transaction_Type_Master];
+
+
+

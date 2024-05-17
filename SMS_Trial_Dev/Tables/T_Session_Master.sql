@@ -19,3 +19,13 @@
     CONSTRAINT [FK_T_Session_Master_T_EOS_Skill_Master] FOREIGN KEY ([I_Skill_ID]) REFERENCES [dbo].[T_EOS_Skill_Master] ([I_Skill_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Session_Master] NOCHECK CONSTRAINT [FK__T_Session__I_Bra__7212AA8A];
+
+
+GO
+ALTER TABLE [dbo].[T_Session_Master] NOCHECK CONSTRAINT [FK_T_Session_Master_T_EOS_Skill_Master];
+
+
+

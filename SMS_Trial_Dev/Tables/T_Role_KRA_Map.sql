@@ -15,3 +15,9 @@
     CONSTRAINT [FK_T_Role_KRA_Map_T_Role_Master] FOREIGN KEY ([I_Role_ID]) REFERENCES [dbo].[T_Role_Master] ([I_Role_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Role_KRA_Map] NOCHECK CONSTRAINT [FK_T_Role_KRA_Map_T_Role_Master];
+
+
+

@@ -17,6 +17,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Session_Module_Map] NOCHECK CONSTRAINT [FK__T_Session__I_Ses__702A6218];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [index_Module_ID_Session_Module]
     ON [dbo].[T_Session_Module_Map]([I_Module_ID] ASC);
 

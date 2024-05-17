@@ -1,5 +1,5 @@
 ﻿  
-CREATE PROCEDURE Usp_ERP_Users_UserGroupMap_Insert_Update                
+CREATE PROCEDURE [dbo].[Usp_ERP_Users_UserGroupMap_Insert_Update]                
     @User_Group_Role_Map_ID bigint=Null ,            
    -- @User_ID Bigint null,   
  --@GroupID int=Null, 
@@ -52,7 +52,7 @@ Select
 distinct  
 --URPM.I_Users_Role_Permission_MapID,  
 UT.I_User_ID,UGR.I_Role_ID,  
-PRM.I_Permission_ID,UGR.I_User_Group_Master_ID,107,UT.Is_Active  
+PRM.I_Permission_ID,UGR.I_User_Group_Master_ID,@BrandID,UT.Is_Active  
   
 from @UT_UserGroup UT  
 Inner Join T_ERP_UserGroup_Role_Brand_Map UGR  

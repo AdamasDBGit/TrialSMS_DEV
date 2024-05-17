@@ -29,3 +29,25 @@
     CONSTRAINT [FK__T_Examina__I_Ter__58DCE86C] FOREIGN KEY ([I_Term_ID]) REFERENCES [dbo].[T_Term_Master] ([I_Term_ID])
 );
 
+
+GO
+ALTER TABLE [EXAMINATION].[T_Examination_Detail] NOCHECK CONSTRAINT [FK__T_Examina__I_Age__57E8C433];
+
+
+GO
+ALTER TABLE [EXAMINATION].[T_Examination_Detail] NOCHECK CONSTRAINT [FK__T_Examina__I_Cen__5AC530DE];
+
+
+GO
+ALTER TABLE [EXAMINATION].[T_Examination_Detail] NOCHECK CONSTRAINT [FK__T_Examina__I_Cou__59D10CA5];
+
+
+GO
+ALTER TABLE [EXAMINATION].[T_Examination_Detail] NOCHECK CONSTRAINT [FK__T_Examina__I_Exa__56007BC1];
+
+
+GO
+ALTER TABLE [EXAMINATION].[T_Examination_Detail] NOCHECK CONSTRAINT [FK__T_Examina__I_Ter__58DCE86C];
+
+
+

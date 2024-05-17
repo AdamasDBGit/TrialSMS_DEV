@@ -18,3 +18,17 @@
     CONSTRAINT [FK__T_Term_Co__I_Ter__78BFA819] FOREIGN KEY ([I_Term_ID]) REFERENCES [dbo].[T_Term_Master] ([I_Term_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Term_Course_Map] NOCHECK CONSTRAINT [FK__T_Term_Co__I_Cer__0B7D76D2];
+
+
+GO
+ALTER TABLE [dbo].[T_Term_Course_Map] NOCHECK CONSTRAINT [FK__T_Term_Co__I_Cou__77CB83E0];
+
+
+GO
+ALTER TABLE [dbo].[T_Term_Course_Map] NOCHECK CONSTRAINT [FK__T_Term_Co__I_Ter__78BFA819];
+
+
+

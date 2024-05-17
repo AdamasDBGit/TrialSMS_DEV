@@ -25,6 +25,24 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Student_Term_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Cou__426DB909];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Term_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Stu__4634284C];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Term_Detail] NOCHECK CONSTRAINT [FK__T_Student__I_Ter__4456017B];
+
+
+GO
+ALTER TABLE [dbo].[T_Student_Term_Detail] NOCHECK CONSTRAINT [FK_T_Student_Term_Detail_T_Student_Batch_Master];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [index_Student_ID_Term_Details]
     ON [dbo].[T_Student_Term_Detail]([I_Student_Detail_ID] ASC);
 

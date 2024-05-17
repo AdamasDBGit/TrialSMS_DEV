@@ -16,3 +16,29 @@
     CONSTRAINT [FK__T_Qualifi__I_Qua__326239C9] FOREIGN KEY ([I_Qualification_Type_ID]) REFERENCES [dbo].[T_Qualification_Type_Master] ([I_Qualification_Type_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Qualification_Name_Master] NOCHECK CONSTRAINT [FK__T_Qualifi__I_Qua__3041EB9B];
+
+
+GO
+ALTER TABLE [dbo].[T_Qualification_Name_Master] NOCHECK CONSTRAINT [FK__T_Qualifi__I_Qua__3079F157];
+
+
+GO
+ALTER TABLE [dbo].[T_Qualification_Name_Master] NOCHECK CONSTRAINT [FK__T_Qualifi__I_Qua__31360FD4];
+
+
+GO
+ALTER TABLE [dbo].[T_Qualification_Name_Master] NOCHECK CONSTRAINT [FK__T_Qualifi__I_Qua__316E1590];
+
+
+GO
+ALTER TABLE [dbo].[T_Qualification_Name_Master] NOCHECK CONSTRAINT [FK__T_Qualifi__I_Qua__322A340D];
+
+
+GO
+ALTER TABLE [dbo].[T_Qualification_Name_Master] NOCHECK CONSTRAINT [FK__T_Qualifi__I_Qua__326239C9];
+
+
+

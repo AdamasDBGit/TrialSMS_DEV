@@ -9,3 +9,9 @@
     CONSTRAINT [FK_T_Holiday_Master_T_Centre_Master] FOREIGN KEY ([I_Center_ID]) REFERENCES [dbo].[T_Centre_Master] ([I_Centre_Id])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Holiday_Master] NOCHECK CONSTRAINT [FK_T_Holiday_Master_T_Brand_Master];
+
+
+

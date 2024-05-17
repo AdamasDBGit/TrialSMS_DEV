@@ -15,3 +15,9 @@
     CONSTRAINT [FK_T_Content_Employee_Dtl_T_User_Master] FOREIGN KEY ([I_User_ID]) REFERENCES [dbo].[T_User_Master] ([I_User_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Content_Employee_Dtl] NOCHECK CONSTRAINT [FK_T_Content_Employee_Dtl_T_Brand_Master];
+
+
+

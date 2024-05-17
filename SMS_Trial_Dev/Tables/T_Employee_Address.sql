@@ -34,3 +34,69 @@
     CONSTRAINT [FK__T_Employe__I_Sta__69A84D12] FOREIGN KEY ([I_State_ID]) REFERENCES [dbo].[T_State_Master] ([I_State_ID])
 );
 
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cit__03681F15];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cit__4165518E];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cit__64E397F5];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cit__68B428D9];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cou__05506787];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cou__434D9A00];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cou__66CBE067];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Cou__6A9C714B];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__0273FADC];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__40712D55];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__63EF73BC];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Emp__67C004A0];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Sta__045C434E];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Sta__425975C7];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Sta__65D7BC2E];
+
+
+GO
+ALTER TABLE [EOS].[T_Employee_Address] NOCHECK CONSTRAINT [FK__T_Employe__I_Sta__69A84D12];
+
+
+

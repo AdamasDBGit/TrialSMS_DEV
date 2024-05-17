@@ -18,3 +18,9 @@
     CONSTRAINT [FK_T_Faculty_Nomination_T_Employee_Dtls] FOREIGN KEY ([I_Employee_ID]) REFERENCES [dbo].[T_Employee_Dtls] ([I_Employee_ID])
 );
 
+
+GO
+ALTER TABLE [ACADEMICS].[T_Faculty_Nomination] NOCHECK CONSTRAINT [FK_T_Faculty_Nomination_T_Employee_Dtls];
+
+
+

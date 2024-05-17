@@ -18,3 +18,9 @@
     CONSTRAINT [FK_T_Fee_Sharing_Audit_T_Brand_Master] FOREIGN KEY ([I_Brand_ID]) REFERENCES [dbo].[T_Brand_Master] ([I_Brand_ID])
 );
 
+
+GO
+ALTER TABLE [dbo].[T_Fee_Sharing_Audit] NOCHECK CONSTRAINT [FK_T_Fee_Sharing_Audit_T_Brand_Master];
+
+
+

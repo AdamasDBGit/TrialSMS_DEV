@@ -15,3 +15,9 @@
     CONSTRAINT [FK_T_Transaction_Type_Master_T_Transaction_Nature_Master] FOREIGN KEY ([I_Transaction_Nature_ID]) REFERENCES [ERP].[T_Transaction_Nature_Master] ([I_Transaction_Nature_ID])
 );
 
+
+GO
+ALTER TABLE [ERP].[T_Transaction_Type_Master] NOCHECK CONSTRAINT [FK_T_Transaction_Type_Master_T_Fee_Component_Master];
+
+
+

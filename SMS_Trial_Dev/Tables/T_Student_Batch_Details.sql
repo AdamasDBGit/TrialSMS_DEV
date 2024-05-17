@@ -22,6 +22,12 @@
 
 
 GO
+ALTER TABLE [dbo].[T_Student_Batch_Details] NOCHECK CONSTRAINT [FK_T_Student_Batch_Details_T_Student_Batch_Details];
+
+
+
+
+GO
 CREATE NONCLUSTERED INDEX [dailyacademicreport]
     ON [dbo].[T_Student_Batch_Details]([I_Status] ASC)
     INCLUDE([I_Student_ID], [I_Batch_ID]);
